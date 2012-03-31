@@ -62,14 +62,19 @@ endif
 " syntax | color
 "----------------------------------------
 " カラー設定
-"colorscheme default
+colorscheme default
 "colorscheme desert
-colorscheme slate
+"colorscheme slate
+"colorscheme zenburn
 "set background=light
 set background=dark
+" ターミナルタイプによるカラー設定
+set t_Co=256
+set t_Sf=[3%dm
+set t_Sb=[4%dm
 " ステータスラインの色
 "highlight StatusLine term=bold cterm=bold ctermfg=black ctermbg=white
-"syntax
+" syntax
 syntax on
 " タブや改行を表示
 set list
@@ -93,6 +98,8 @@ augroup END
 :hi clear CursorLine
 :hi CursorLine gui=underline
 highlight CursorLine ctermbg=black guibg=black
+" コマンド実行中は再描画しない
+set lazyredraw
 
 "----------------------------------------
 " serch
