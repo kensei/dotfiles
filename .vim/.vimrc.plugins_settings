@@ -1,0 +1,47 @@
+"------------------------------------
+" VTreeExplorer
+"------------------------------------
+" 縦に表示する
+let g:treeExplVertical=1
+" 分割したウィンドウのサイズ
+let g:treeExplWinSize=30
+
+"------------------------------------
+" vimshell
+"------------------------------------
+let g:vimshell_user_prompt = 'fnamemodify(getcwd(), ":~")'
+let g:vimshell_right_prompt = 'vimshell#vcs#info("(%s)-[%b]", "(%s)-[%b|%a]")'
+let g:vimshell_enable_smart_case = 1
+
+if has('win32') || has('win64')
+  " Display user name on Windows.
+  let g:vimshell_prompt = $USERNAME."% "
+else
+  " Display user name on Linux.
+  let g:vimshell_prompt = $USER."% "
+endif
+
+"------------------------------------
+" unite.vim
+"------------------------------------
+autocmd FileType unite call s:unite_my_settings()
+function! s:unite_my_settings()"{{{
+  " Overwrite settings.
+
+  " ESCキーを2回押すと終了する
+  nmap <buffer> <ESC>      <Plug>(unite_exit)
+  nmap <buffer> <ESC><ESC> <Plug>(unite_exit)
+endfunction"}}}
+
+"------------------------------------
+" Powerline
+"------------------------------------
+"let g:Powerline_symbols = 'fancy'
+
+"------------------------------------
+" Syntastic
+"------------------------------------
+" エラー行をsignで表示する
+let g:syntastic_enable_signs = 1
+" 可能ならhighligt表示する
+let g:syntastic_enable_highlighting = 1

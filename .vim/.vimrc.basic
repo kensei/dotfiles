@@ -1,0 +1,168 @@
+set nocompatible
+scriptencoding utf-8
+
+" 改行コードの自動認識
+set fileformats=unix,dos,mac
+" バックスペースキーで削除できるものを指定
+"  indent  : 行頭の空白
+"  eol     : 改行
+"  start   : 挿入モード開始位置より手前の文字
+set backspace=indent,eol,start
+" 他で書き換えられたら自動で読み直す
+set autoread
+" スワップファイル作らない
+set noswapfile
+" ファイルタイプ判定をon
+filetype plugin on
+
+"----------------------------------------
+"メッセージの日本語化
+"----------------------------------------
+if has('unix')&&has('gui_running')
+  let $LANG='ja'
+endif
+
+"----------------------------------------
+" display
+"----------------------------------------
+" 行番号をハイライト
+highlight LineNr ctermfg=darkgrey
+" 行番号を表示
+set number
+" タイトルにファイル名表示
+set title
+" 行間
+"set linespace=0
+" コマンドを画面の最下行に表示
+set showcmd
+" 現在のモードを表示
+set showmode
+" コードレイアウトのガイドライン
+"  set textwidth=78
+"  set columns=100
+"  set lines=150
+" 変更中のファイルでも、保存しないで他のファイルを表示
+set hidden
+" 最終行がはいりきらなくても表示する
+set display=lastline
+" カーソル移動で、行を跨いで移動
+set whichwrap=b,s,[,],<,>
+" ウィンドウの幅より長い行は折り返さない
+set nowrap
+" 起動時のメッセージを消す
+set shortmess+=I
+" バイナリファイルの非印字可能文字を16進数で表示
+set display=uhex
+" □とか○の文字があってもカーソル位置がずれないようにする
+if exists('&ambiwidth')
+  set ambiwidth=double
+endif
+
+"----------------------------------------
+" syntax | color
+"----------------------------------------
+" カラー設定
+"colorscheme default
+"colorscheme desert
+colorscheme slate
+"set background=light
+set background=dark
+" ステータスラインの色
+"highlight StatusLine term=bold cterm=bold ctermfg=black ctermbg=white
+"syntax
+syntax on
+" タブや改行を表示
+set list
+set listchars=tab:>-,extends:<,trail:-,eol:<
+highlight SpecialKey guifg=lightgrey
+highlight NonText term=underline guifg=lightgrey
+" 全角スペースを視覚化
+augroup highlightZenkakuSpace
+  autocmd!
+  autocmd VimEnter,ColorScheme * highlight ZenkakuSpace gui=underline guibg=lightgrey guifg=darkgrey
+  autocmd VimEnter,WinEnter * match ZenkakuSpace /　/
+augroup END
+" カーソル行をハイライト
+set cursorline
+" カレントウィンドウにのみ罫線を引く
+augroup cch
+  autocmd! cch
+  autocmd WinLeave * set nocursorline
+  autocmd WinEnter,BufRead * set cursorline
+augroup END
+:hi clear CursorLine
+:hi CursorLine gui=underline
+highlight CursorLine ctermbg=black guibg=black
+
+"----------------------------------------
+" serch
+"----------------------------------------
+" コマンド、検索パターンを100個まで履歴に残す
+set history=100
+" 大文字小文字の無視
+set ignorecase
+" 検索パターンが大文字を含んでいたらignorecaseは無効
+set smartcase
+" 折り返し検索を有効
+set wrapscan
+" 検索ハイライト
+set hlsearch
+" インクリメンタルサーチ
+set incsearch
+" esc連打で検索ハイライトを消す
+nmap <Esc><Esc> :nohlsearch<CR><Esc>
+" ビジュアルで選択検索
+vnoremap * "zy:let @/ = @z<CR>n
+
+"----------------------------------------
+" edit
+"----------------------------------------
+" オートインデント
+"set autoindent
+" オートインデントを無効にする
+set noautoindent
+" タブが対応する空白の数
+set tabstop=2
+" タブやバックスペースの使用等の編集操作をするときに、タブが対応する空白の数
+set softtabstop=2
+" インデントの各段階に使われる空白の数
+set shiftwidth=2
+" タブを挿入するとき、代わりに空白を使う
+set expandtab
+" 行頭の余白内の<Tab>でインデント
+set smarttab
+" 'smarttab'のインデント量
+set shiftwidth=4
+" インデントを'shiftwidth'の値の倍数に丸める
+set shiftround
+" Cインデント
+set cindent
+" 閉じ括弧が入力されたとき、対応する開き括弧にわずかの間ジャンプ
+set showmatch
+" バックスペースにてインデントを削除可能にする
+"  indent : 行頭の空白
+"  eol : 改行
+"  start : 挿入モード開始位置より手前の文字
+set backspace=indent,eol,start
+" クリップボードをWindowsと連携
+set clipboard=unnamed
+" ヤンクした文字は、システムのクリップボードに入れる"
+set clipboard=unnamed
+" ペーストモード切替キー
+set pastetoggle=<F12>
+" バックスラッシュをスラッシュに置き換え
+set shellslash
+" Visual選択で選択されたテキストを自動的にクリップボードレジスタ "*" にコピー
+set guioptions+=a
+
+"----------------------------------------
+" 保存
+"----------------------------------------
+" utf-8で保存
+set fileencoding=utf-8
+" 保存時に行末の空白を除去する
+autocmd BufWritePre * :%s/\s\+$//ge
+" 保存時にtabをスペースに変換する
+autocmd BufWritePre * :%s/\t/  /ge
+" バックアップ取らない
+set nobackup

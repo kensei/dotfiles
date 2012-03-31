@@ -1,0 +1,18 @@
+# タブ補完時、大文字小文字無視
+set completion-ignore-case on
+
+# コンソールの横幅をあふれたとき自動スクロール
+set horizontal-scroll-mode on
+
+# 末尾に / を補完しないように変更
+set mark-directories of
+
+# visible-stats
+# Append a mark according to the file type in a listing
+set visible-stats off
+set mark-directories on
+
+# 日本語関係
+set input-meta on
+set convert-meta off
+set output-meta on

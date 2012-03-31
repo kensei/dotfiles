@@ -1,0 +1,95 @@
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Edit {{{
+  " vim-tcomment : コメント切替
+  Bundle 'tomtom/tcomment_vim'
+" }}}
+
+" Completion {{{
+  " javacomplete : Java補完
+  Bundle 'vim-scripts/javacomplete'
+
+  " 補完 neocomplcache.vim : 究極のVim的補完環境
+  Bundle 'Shougo/neocomplcache'
+
+  " neocomplcacheのsinpet補完
+  Bundle 'Shougo/neocomplcache-snippets-complete'
+" }}}
+
+" Searching/Moving{{{
+  " open-browser.vim : カーソルの下のURLを開くor単語を検索エンジンで検索
+  Bundle 'tyru/open-browser.vim'
+" }}}
+
+" Programming {{{
+  " quickrun.vim : 編集中のファイルを簡単に実行できるプラグイン
+  Bundle 'thinca/vim-quickrun'
+
+  " SQLUtilities : SQL整形、生成ユーティリティ
+  Bundle 'SQLUtilities'
+
+  " vim-ruby : VimでRubyを扱う際の最も基本的な拡張機能
+  Bundle 'ruby.vim'
+
+  " rails.vim : rails
+  Bundle 'tpope/vim-rails'
+
+  " Pydiction : Python用の入力補完
+  Bundle 'Pydiction'
+
+  " ソースコード上のメソッド宣言、変数宣言の一覧を表示
+  Bundle 'taglist.vim'
+
+  " tagsを利用したソースコード閲覧・移動補助機能 tagsファイルの自動生成
+  " Bundle 'Source-Explorer-srcexpl.vim'
+
+  " NERD_tree, taglist, srcexpl の統合
+  " Bundle 'trinity.vim'
+" }}}
+
+" Syntax {{{
+  " syntax checking plugins exist for applescript, c, coffee, cpp, css, cucumber, cuda, docbk, erlang, eruby, fortran, gentoo_metadata, go, haml, haskell, html, javascript, json, less, lua, matlab, perl, php, puppet, python, rst, ruby, sass/scss, sh, tcl, tex, vala, xhtml, xml, xslt, yaml, zpt.
+  Bundle 'scrooloose/syntastic'
+" }}}
+
+" Buffer {{{
+  " vtreeexplorer.vim : ツリー状にファイルやディレクトリの一覧を表示
+  Bundle 'vtreeexplorer'
+" }}}
+
+" Encording {{{
+  " FileEncording
+  Bundle 'banyan/recognize_charcode.vim'
+" }}}
+
+" Utility {{{
+  " vimshell : vimのshell
+  Bundle 'Shougo/vimshell.git'
+
+  " vimproc : vimから非同期実行。vimshelleで必要
+  Bundle 'Shougo/vimproc.git'
+
+" vimからGit操作する
+  Bundle 'tpope/vim-fugitive'
+
+  " ステータスラインをカッコよくする
+  Bundle 'Lokaltog/vim-powerline'
+" }}}
+
+" ColorSchema{{{{
+  " Thema
+  Bundle 'slate.vim'
+" }}}
+
+" Unite {{{{
+  " unite.vim : - すべてを破壊し、すべてを繋げ - vim scriptで実装されたanythingプラグイン
+  Bundle 'Shougo/unite.vim'
+  Bundle 'h1mesuke/unite-outline'
+  Bundle 'basyura/unite-rails'
+" }}}
+"
+Bundle 'gmarik/vundle'
+
+filetype plugin indent on
