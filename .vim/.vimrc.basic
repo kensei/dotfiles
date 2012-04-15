@@ -161,6 +161,10 @@ set pastetoggle=<F12>
 set shellslash
 " Visual選択で選択されたテキストを自動的にクリップボードレジスタ "*" にコピー
 set guioptions+=a
+" ファイルタイプ別の設定
+filetype on
+filetype indent on
+filetype plugin on
 
 "----------------------------------------
 " 保存
