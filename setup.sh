@@ -7,4 +7,4 @@ do
     ln -s $HOME/dotfiles/$file $HOME/$file
 done
 
-cp -r .vim $HOME/
+ln -s $HOME/dotfiles/.vim/ $HOME/.vim

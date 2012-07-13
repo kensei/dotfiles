@@ -67,8 +67,8 @@ sorendition "+rb .G"
 # ステータス行に各ウィンドウで打ったコマンドを表示
 shelltitle "$ |shell"
 
-# エスケープ C-t
-escape ^Tt
+# エスケープ C-z
+escape ^Zz
 
 # encodings
 # default encoding for new window
@@ -91,6 +91,7 @@ attrcolor i "+b"
 term xterm-256color
 termcapinfo xterm* 'Co#256:pa#32767:AB=\E[48;5;%dm:AF=\E[38;5;%dm:'
 termcapinfo kterm* 'Co#256:pa#32767:AB=\E[48;5;%dm:AF=\E[38;5;%dm:'
+termcapinfo xterm-256color 'is=^[r^[mJ^[H^[?7h^[?1;4;6l'
 
 escape codes to avoid resize window at starting screen
 termcapinfo xterm* 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'

@@ -24,7 +24,7 @@ let g:neocomplcache_enable_auto_select = 1
 "ポップアップメニューで表示される候補の数。初期値は100
 let g:neocomplcache_max_list = 20
 
-" Define dictionary.
+" Define dictionary.<
 let g:neocomplcache_dictionary_filetype_lists = {
     \ 'default' : '',
     \ 'java' : $HOME.'/.vim/dict/java.dict',
@@ -42,6 +42,38 @@ let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
 
 " ユーザー定義スニペット保存ディレクトリ
 let g:neocomplcache_snippets_dir = $HOME.'/.vim/snippets'
+
+" スニペット
+imap <C-y> <Plug>(neocomplcache_snippets_expand)
+smap <C-k> <Plug>(neocomplcache_snippets_expand)
+
+" 補完を選択しpopupを閉じる
+" inoremap <expr><C-y> neocomplcache#close_popup()
+" 補完をキャンセルしpopupを閉じる
+" inoremap <expr><C-e> neocomplcache#cancel_popup()
+" TABで補完できるようにする
+inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+" undo
+inoremap <expr><C-g>     neocomplcache#undo_completion()
+" 補完候補の共通部分までを補完する
+inoremap <expr><C-s> neocomplcache#complete_common_string()
+" SuperTab like snippets behavior.
+imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? "\<C-n>" : "\<TAB>"
+" C-kを押すと行末まで削除
+" inoremap <C-k> <C-o>D
+" C-nでneocomplcache補完
+inoremap <expr><C-n>  pumvisible() ? "\<C-n>" : "\<C-x>\<C-u>\<C-p>"
+" C-pでkeyword補完
+inoremap <expr><C-p> pumvisible() ? "\<C-p>" : "\<C-p>\<C-n>"
+" 補完候補が出ていたら確定、なければ改行
+inoremap <expr><CR>  pumvisible() ? neocomplcache#close_popup() : "<CR>"
+
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+" <C-h>, <BS>: close popup and delete backword char.
+inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
+inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
+inoremap <expr><C-x><C-o> &filetype == 'vim' ? "\<C-x><C-v><C-p>" : neocomplcache#manual_omni_complete()
 
 " buffer開いたらneoconでcache
 autocmd BufReadPost,BufEnter,BufWritePost :NeoComplCacheCachingBuffer <buffer>
@@ -83,6 +115,7 @@ let g:neocomplcache_include_paths = {
 let g:neocomplcache_include_patterns = {
   \ 'cpp' : '^\s*#\s*include',
   \ 'ruby' : '^\s*require',
+  \ 'perl' : '^\s*use',
   \ }
 "インクルード先のファイル名の解析パターン
 let g:neocomplcache_include_exprs = {
@@ -91,4 +124,5 @@ let g:neocomplcache_include_exprs = {
 " ファイルを探す際に、この値を末尾に追加したファイルも探す。
 let g:neocomplcache_include_suffixes = {
   \ 'ruby' : '.rb',
+  \ 'haskell' : '.hs'
   \ }

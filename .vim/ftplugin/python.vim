@@ -1,4 +1,4 @@
-setl expandtab
-setl tabstop=4
-setl shiftwidth=4
-setl softtabstop=4
+setlocal expandtab
+setlocal tabstop=4
+setlocal shiftwidth=4
+setlocal softtabstop=4

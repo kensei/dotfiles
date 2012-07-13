@@ -3,59 +3,125 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " Edit {{{
-  " vim-tcomment : ƒRƒƒ“ƒgØ‘Ö
+  " NERD_commenter.vim :æœ€å¼·ã‚³ãƒ¡ãƒ³ãƒˆå‡¦ç† (<Leader>c<space>ã§ã‚³ãƒ¡ãƒ³ãƒˆã‚’ãƒˆã‚°ãƒ«)
+  Bundle 'scrooloose/nerdcommenter.git'
+
+  " visually indent guide
+  Bundle 'nathanaelkane/vim-indent-guides'
+
+  " vim-tcomment : ã‚³ãƒ¡ãƒ³ãƒˆåˆ‡æ›¿
   Bundle 'tomtom/tcomment_vim'
+
+  " surround.vim : ãƒ†ã‚­ã‚¹ãƒˆã‚’æ‹¬å¼§ã§å›²ã‚€ï¼å‰Šé™¤ã™ã‚‹
+  Bundle 'tpope/surround.vim'
+
+  " textobj-user : ç°¡å˜ã«Vimã‚¨ãƒ‡ã‚£ã‚¿ã®ãƒ†ã‚­ã‚¹ãƒˆã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ã¤ãã‚Œã‚‹
+  Bundle 'textobj-user'
+
+  " vim-textobj-syntax : syntax hilightã•ã‚ŒãŸã‚‚ã®ã‚’text-objectã«
+  Bundle 'kana/vim-textobj-syntax.git'
+
+  " vim-textobj-plugins : ã„ã‚ã‚“ãªã‚‚ã®ã‚’text-objectã«ã™ã‚‹
+  Bundle 'thinca/vim-textobj-plugins.git'
+
+  " vim-textobj-lastpat : æœ€å¾Œã«æ¤œç´¢ã•ã‚ŒãŸãƒ‘ã‚¿ãƒ¼ãƒ³ã‚’text-objectã«
+  Bundle 'kana/vim-textobj-lastpat.git'
+
+  " vim-textobj-indent : ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆã•ã‚ŒãŸã‚‚ã®ã‚’text-objectã«
+  Bundle 'kana/vim-textobj-indent.git'
+
+  " vim-textobj-function : é–¢æ•°ã®ä¸­èº«ã‚’text-objectã«
+  Bundle 'kana/vim-textobj-function.git'
+
+  " vim-textobj-fold : æŠ˜ã‚ŠãŸãŸã¾ã‚ŒãŸã‚¢ãƒ¬ã‚’text-objectã«
+  Bundle 'kana/vim-textobj-fold.git'
 " }}}
 
 " Completion {{{
-  " javacomplete : Java•âŠ®
+  " javacomplete : Javaè£œå®Œ
   Bundle 'vim-scripts/javacomplete'
 
-  " •âŠ® neocomplcache.vim : ‹†‹É‚ÌVim“I•âŠ®ŠÂ‹«
+  " è£œå®Œ neocomplcache.vim : ç©¶æ¥µã®Vimçš„è£œå®Œç’°å¢ƒ
   Bundle 'Shougo/neocomplcache'
 
-  " neocomplcache‚Ìsinpet•âŠ®
+  " neocomplcacheã®sinpetè£œå®Œ
   Bundle 'Shougo/neocomplcache-snippets-complete'
 " }}}
 
 " Searching/Moving{{{
-  " open-browser.vim : ƒJ[ƒ\ƒ‹‚Ì‰º‚ÌURL‚ğŠJ‚­or’PŒê‚ğŒŸõƒGƒ“ƒWƒ“‚ÅŒŸõ
+  " open-browser.vim : ã‚«ãƒ¼ã‚½ãƒ«ã®ä¸‹ã®URLã‚’é–‹ãorå˜èªã‚’æ¤œç´¢ã‚¨ãƒ³ã‚¸ãƒ³ã§æ¤œç´¢
   Bundle 'tyru/open-browser.vim'
+
+  " grep.vim : å¤–éƒ¨ã®grepåˆ©ç”¨ã€‚:Grepã§å¯¾è©±å½¢å¼ã§grep :Rgrepã¯å†å¸°
+  Bundle 'grep.vim'
 " }}}
 
 " Programming {{{
-  " quickrun.vim : •ÒW’†‚Ìƒtƒ@ƒCƒ‹‚ğŠÈ’P‚ÉÀs‚Å‚«‚éƒvƒ‰ƒOƒCƒ“
+  " quickrun.vim : ç·¨é›†ä¸­ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç°¡å˜ã«å®Ÿè¡Œã§ãã‚‹ãƒ—ãƒ©ã‚°ã‚¤ãƒ³
   Bundle 'thinca/vim-quickrun'
 
-  " SQLUtilities : SQL®Œ`A¶¬ƒ†[ƒeƒBƒŠƒeƒB
+  " perldocã‚„phpmanualç­‰ã®ãƒªãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ã‚’vimä¸Šã§è¦‹ã‚‹
+  Bundle 'thinca/vim-ref'
+
+  " SQLUtilities : SQLæ•´å½¢ã€ç”Ÿæˆãƒ¦ãƒ¼ãƒ†ã‚£ãƒªãƒ†ã‚£
   Bundle 'SQLUtilities'
 
-  " vim-ruby : Vim‚ÅRuby‚ğˆµ‚¤Û‚ÌÅ‚àŠî–{“I‚ÈŠg’£‹@”\
+  " vim-ruby : Vimã§Rubyã‚’æ‰±ã†éš›ã®æœ€ã‚‚åŸºæœ¬çš„ãªæ‹¡å¼µæ©Ÿèƒ½
   Bundle 'ruby.vim'
 
-  " rails.vim : rails
+  " rails.vim : railsçš„ãªã‚¢ãƒ¬
   Bundle 'tpope/vim-rails'
 
-  " Pydiction : Python—p‚Ì“ü—Í•âŠ®
+  " Pydiction : Pythonç”¨ã®å…¥åŠ›è£œå®Œ
   Bundle 'Pydiction'
 
-  " ƒ\[ƒXƒR[ƒhã‚Ìƒƒ\ƒbƒhéŒ¾A•Ï”éŒ¾‚Ìˆê——‚ğ•\¦
+  " ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ä¸Šã®ãƒ¡ã‚½ãƒƒãƒ‰å®£è¨€ã€å¤‰æ•°å®£è¨€ã®ä¸€è¦§ã‚’è¡¨ç¤º
   Bundle 'taglist.vim'
 
-  " tags‚ğ—˜—p‚µ‚½ƒ\[ƒXƒR[ƒh‰{——EˆÚ“®•â•‹@”\ tagsƒtƒ@ƒCƒ‹‚Ì©“®¶¬
-  " Bundle 'Source-Explorer-srcexpl.vim'
+  " tagsã‚’åˆ©ç”¨ã—ãŸã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰é–²è¦§ãƒ»ç§»å‹•è£œåŠ©æ©Ÿèƒ½ tagsãƒ•ã‚¡ã‚¤ãƒ«ã®è‡ªå‹•ç”Ÿæˆ
+  Bundle 'Source-Explorer-srcexpl.vim'
 
-  " NERD_tree, taglist, srcexpl ‚Ì“‡
-  " Bundle 'trinity.vim'
+  " NERD_tree, taglist, srcexpl ã®çµ±åˆ
+  "Bundle 'trinity.vim'
+
+  " symfony
+  Bundle 'soh335/vim-symfony.git'
 " }}}
 
 " Syntax {{{
+  " JavaScript
+  Bundle 'JavaScript-syntax'
+
+  " jQuery
+  Bundle 'jQuery'
+
+  " markdown
+  Bundle 'tpope/vim-markdown'
+
+  " coffee script
+  Bundle 'kchmck/vim-coffee-script'
+
+  " python
+  Bundle 'yuroyoro/vim-python'
+
+  " scala
+  Bundle 'yuroyoro/vim-scala'
+
+  " markdown
+  Bundle 'tpope/vim-markdown'
+
   " syntax checking plugins exist for applescript, c, coffee, cpp, css, cucumber, cuda, docbk, erlang, eruby, fortran, gentoo_metadata, go, haml, haskell, html, javascript, json, less, lua, matlab, perl, php, puppet, python, rst, ruby, sass/scss, sh, tcl, tex, vala, xhtml, xml, xslt, yaml, zpt.
   Bundle 'scrooloose/syntastic'
 " }}}
 
 " Buffer {{{
-  " vtreeexplorer.vim : ƒcƒŠ[ó‚Éƒtƒ@ƒCƒ‹‚âƒfƒBƒŒƒNƒgƒŠ‚Ìˆê——‚ğ•\¦
+  " minibufexpl.vim : ã‚¿ãƒ–ã‚¨ãƒ‡ã‚£ã‚¿é¢¨ã«ãƒãƒƒãƒ•ã‚¡ç®¡ç†ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚’è¡¨ç¤º
+  Bundle 'minibufexpl.vim'
+
+  " NERDTree : ãƒ„ãƒªãƒ¼å‹ã‚¨ã‚¯ã‚¹ãƒ—ãƒ­ãƒ¼ãƒ©
+  Bundle 'The-NERD-tree'
+
+  " vtreeexplorer.vim : ãƒ„ãƒªãƒ¼çŠ¶ã«ãƒ•ã‚¡ã‚¤ãƒ«ã‚„ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã®ä¸€è¦§ã‚’è¡¨ç¤º
   Bundle 'vtreeexplorer'
 " }}}
 
@@ -65,29 +131,34 @@ call vundle#rc()
 " }}}
 
 " Utility {{{
-  " vimshell : vim‚Ìshell
+  " vimshell : vimã®shell
   Bundle 'Shougo/vimshell.git'
 
-  " vimproc : vim‚©‚ç”ñ“¯ŠúÀsBvimshelle‚Å•K—v
+  " vimproc : vimã‹ã‚‰éåŒæœŸå®Ÿè¡Œã€‚vimshelleã§å¿…è¦
   Bundle 'Shougo/vimproc.git'
 
-" vim‚©‚çGit‘€ì‚·‚é
+  " vimã‹ã‚‰Gitæ“ä½œã™ã‚‹
   Bundle 'tpope/vim-fugitive'
 
-  " ƒXƒe[ƒ^ƒXƒ‰ƒCƒ“‚ğƒJƒbƒR‚æ‚­‚·‚é
+  " ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒ©ã‚¤ãƒ³ã‚’ã‚«ãƒƒã‚³ã‚ˆãã™ã‚‹
   Bundle 'Lokaltog/vim-powerline'
 " }}}
 
 " ColorSchema{{{{
   " Thema
-  Bundle 'slate.vim'
+  Bundle 'desert256.vim'
+  Bundle 'mrkn256.vim'
+  Bundle 'tomasr/molokai'
+  Bundle 'Wombat'
+  Bundle 'yuroyoro/yuroyoro256.vim'
 " }}}
 
 " Unite {{{{
-  " unite.vim : - ‚·‚×‚Ä‚ğ”j‰ó‚µA‚·‚×‚Ä‚ğŒq‚° - vim script‚ÅÀ‘•‚³‚ê‚½anythingƒvƒ‰ƒOƒCƒ“
+  " unite.vim : - ã™ã¹ã¦ã‚’ç ´å£Šã—ã€ã™ã¹ã¦ã‚’ç¹‹ã’ - vim scriptã§å®Ÿè£…ã•ã‚ŒãŸanythingãƒ—ãƒ©ã‚°ã‚¤ãƒ³
   Bundle 'Shougo/unite.vim'
   Bundle 'h1mesuke/unite-outline'
-  Bundle 'basyura/unite-rails'
+  "Bundle 'basyura/unite-rails'
+  Bundle 'tsukkee/unite-tag'
 " }}}
 "
 Bundle 'gmarik/vundle'

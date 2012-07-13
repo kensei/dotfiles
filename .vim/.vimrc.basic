@@ -25,8 +25,6 @@ endif
 "----------------------------------------
 " display
 "----------------------------------------
-" 行番号をハイライト
-highlight LineNr ctermfg=darkgrey
 " 行番号を表示
 set number
 " タイトルにファイル名表示
@@ -59,21 +57,8 @@ if exists('&ambiwidth')
 endif
 
 "----------------------------------------
-" syntax | color
+" syntax
 "----------------------------------------
-" カラー設定
-colorscheme default
-"colorscheme desert
-"colorscheme slate
-"colorscheme zenburn
-"set background=light
-set background=dark
-" ターミナルタイプによるカラー設定
-set t_Co=256
-set t_Sf=[3%dm
-set t_Sb=[4%dm
-" ステータスラインの色
-"highlight StatusLine term=bold cterm=bold ctermfg=black ctermbg=white
 " syntax
 syntax on
 " タブや改行を表示
@@ -118,8 +103,6 @@ set hlsearch
 set incsearch
 " esc連打で検索ハイライトを消す
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
-" ビジュアルで選択検索
-vnoremap * "zy:let @/ = @z<CR>n
 
 "----------------------------------------
 " edit
@@ -172,8 +155,18 @@ filetype plugin on
 " utf-8で保存
 set fileencoding=utf-8
 " 保存時に行末の空白を除去する
-autocmd BufWritePre * :%s/\s\+$//ge
+"autocmd BufWritePre * :%s/\s\+$//ge
 " 保存時にtabをスペースに変換する
 autocmd BufWritePre * :%s/\t/  /ge
 " バックアップ取らない
 set nobackup
+
+"----------------------------------------
+" コマンドモードのキーマップ
+"----------------------------------------
+cmap <C-f> <Right>
+cmap <C-b> <Left>
+cmap <C-a> <Home>
+cmap <C-e> <End>
+cmap <C-d> <Del>
+cmap <C-h> <BackSpace>

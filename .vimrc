@@ -15,3 +15,9 @@ source ~/.vim/.vimrc.encoding
 
 "プラグイン
 source ~/.vim/.vimrc.plugins_settings
+
+"色設定
+source ~/.vim/.vimrc.color
+
+"tags
+"source ~/.vim/.vimrc.tags
