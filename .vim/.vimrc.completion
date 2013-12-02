@@ -2,7 +2,7 @@
 set wildmenu
 
 " コマンド補完を開始するキー
-set wildchar=<tab>
+" set wildchar=<tab>
 
 " リスト表示，最長マッチ
 set wildmode=list:full
@@ -14,13 +14,13 @@ set history=1000
 set complete+=k
 
 " 辞書
-"autocmd Filetype ruby :set dictionary=~/.vim/dict/ruby.dict
-"autocmd Filetype java :set dictionary=~/.vim/dict/java.dict
-"autocmd Filetype c :set dictionary=~/.vim/dict/c.dict
-"autocmd Filetype cpp :set dictionary=~/.vim/dict/cpp.dict
-"autocmd Filetype js :set dictionary=~/.vim/dict/javascript.dict
-"autocmd Filetype php :set dictionary=~/.vim/dict/php.dict
-"autocmd Filetype vm :set dictionary=~/.vim/dict/vim.dict
+autocmd Filetype ruby :set dictionary=~/.vim/dict/ruby.dict
+autocmd Filetype java :set dictionary=~/.vim/dict/java.dict
+autocmd Filetype c :set dictionary=~/.vim/dict/c.dict
+autocmd Filetype cpp :set dictionary=~/.vim/dict/cpp.dict
+autocmd Filetype js :set dictionary=~/.vim/dict/javascript.dict
+autocmd Filetype php :set dictionary=~/.vim/dict/php.dict
+autocmd Filetype vm :set dictionary=~/.vim/dict/vim.dict
 
 " 補完にneocomplcacheを使う
-source ~/.vim/.vimrc.completion.neocomplcache
+" source ~/.vim/.vimrc.completion.neocomplcache

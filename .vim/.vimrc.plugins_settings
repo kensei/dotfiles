@@ -43,16 +43,18 @@ let g:syntastic_enable_highlighting = 1
 "------------------------------------
 " 検索外のディレクトリ、ファイルパターン
 let Grep_Skip_Dirs = '.svn .git .hg .bzr'
-let Grep_Skip_Files = '*.bak *~ .ctags'
+let Grep_Skip_Files = '*.bak *~ .ctags .tags'
 
 "------------------------------------
 " NERD_commenter.vim
 "------------------------------------
 " コメントの間にスペースを空ける
 let NERDSpaceDelims = 1
-"<Leader>xでコメントをトグル(NERD_commenter.vim)
-"map <Leader>x, c<space>
-""未対応ファイルタイプのエラーメッセージを表示しない
+" C-oでコメントをトグル(NERD_commenter.vim)
+let g:NERDCreateDefaultMappings = 0
+nmap <c-o> <Plug>NERDCommenterToggle
+vmap <c-o> <Plug>NERDCommenterToggle
+" 未対応ファイルタイプのエラーメッセージを表示しない
 let NERDShutUp=1
 
 "------------------------------------
@@ -89,6 +91,8 @@ let Tlist_Enable_Fold_Column = 1          " 折りたたみ
 "let Tlist_Auto_Open = 1                   " 自動表示
 let Tlist_Auto_Update = 1
 let Tlist_WinWidth = 30
+let g:tlist_php_settings = 'php;c:class;d:constant;f:function'
+let g:tlist_javascript_settings = 'javascript;c:class;m:method;f:function'
 nnoremap <F5> :CMiniBufExplorer<CR>:TlistToggle<CR>:TMiniBufExplorer<CR>
 
 "------------------------------------
@@ -99,6 +103,8 @@ nnoremap <F4> :CMiniBufExplorer<CR>:TMiniBufExplorer<CR>
 "------------------------------------
 " NERDTree
 "------------------------------------
+let g:NERDTreeShowHidden=1
+let g:NERDTreeIgnore=['\.swp$', '\.tags', '\.git$']
 nnoremap <F2> :NERDTreeToggle<CR>
 nnoremap <F3> :NERDTreeFind<CR>
 
@@ -118,3 +124,36 @@ else
     hi IndentGuidesOdd  ctermbg=white
     hi IndentGuidesEven ctermbg=lightgrey
 endif
+
+"------------------------------------
+" ref.vim
+"------------------------------------
+let g:ref_alc_start_linenumber = 20 " 表示する行数
+let g:ref_alc_encoding = 'UTF-8' " 文字化けするならここで文字コードを指定してみる
+" webdictサイトの設定
+let g:ref_source_webdict_sites = {
+\   'je': {
+\     'url': 'http://dictionary.infoseek.ne.jp/jeword/%s',
+\   },
+\   'ej': {
+\     'url': 'http://dictionary.infoseek.ne.jp/ejword/%s',
+\   },
+\   'wiki': {
+\     'url': 'http://ja.wikipedia.org/wiki/%s',
+\   },
+\ }
+let g:ref_source_webdict_sites.default = 'ej' " デフォルトサイト
+" 出力に対するフィルタ。最初の数行を削除
+function! g:ref_source_webdict_sites.je.filter(output)
+  return join(split(a:output, "\n")[15 :], "\n")
+endfunction
+function! g:ref_source_webdict_sites.ej.filter(output)
+  return join(split(a:output, "\n")[15 :], "\n")
+endfunction
+function! g:ref_source_webdict_sites.wiki.filter(output)
+  return join(split(a:output, "\n")[17 :], "\n")
+endfunction
+" キーマップ
+nnoremap <Leader>re :<C-u>Ref webdict je<Space>
+nnoremap <Leader>rj :<C-u>Ref webdict ej<Space>
+nnoremap <Leader>rw :<C-u>Ref webdict wiki<Space>

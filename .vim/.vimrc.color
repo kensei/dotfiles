@@ -1,36 +1,110 @@
-"-------------------------------------------------------------------------------
-" カラー関連 Colors
-"-------------------------------------------------------------------------------
+" 行番号をハイライト
+"highlight LineNr ctermfg=white
 
-" colorscheme mrkn256
+" カラー設定
+"colorscheme default
+"colorscheme desert
 colorscheme yuroyoro256
+"colorscheme mrkn256
+"colorscheme slate
+"colorscheme zenburn
+"set background=light
+"set background=dark
 
 " ターミナルタイプによるカラー設定
-if &term =~ "xterm-256color" || "screen-256color"
-  " 256色
-  set t_Co=256
-  set t_Sf=[3%dm
-  set t_Sb=[4%dm
-elseif &term =~ "xterm-debian" || &term =~ "xterm-xfree86"
-  set t_Co=16
-  set t_Sf=[3%dm
-  set t_Sb=[4%dm
-elseif &term =~ "xterm-color"
-  set t_Co=8
-  set t_Sf=[3%dm
-  set t_Sb=[4%dm
-endif
+set t_Co=256
+set t_Sf=[3%dm
+set t_Sb=[4%dm
 
-"ポップアップメニューのカラーを設定
-"hi Pmenu guibg=#666666
-"hi PmenuSel guibg=#8cd0d3 guifg=#666666
-"hi PmenuSbar guibg=#333333
+" ステータスラインの色
+"highlight StatusLine term=bold cterm=bold ctermfg=black ctermbg=white
 
-" ハイライト on
-syntax enable
-" 補完候補の色づけ for vim7
-" hi Pmenu ctermbg=255 ctermfg=0 guifg=#000000 guibg=#999999
-" hi PmenuSel ctermbg=blue ctermfg=black
+" ポップアップの色
 hi PmenuSel cterm=reverse ctermfg=33 ctermbg=222 gui=reverse guifg=#3399ff guibg=#f0e68c
-" hi PmenuSbar ctermbg=0 ctermfg=9
-" hi PmenuSbar ctermbg=255 ctermfg=0 guifg=#000000 guibg=#FFFFFF
+
+let s:colourcube_values = [ 0x00, 0x5F, 0x87, 0xAF, 0xD7, 0xFF ]
+let s:base16_values =   [ [ 0x00, 0x00, 0x00 ]
+\     , [ 0xCD, 0x00, 0x00 ]
+\     , [ 0x00, 0xCD, 0x00 ]
+\     , [ 0xCD, 0xCD, 0x00 ]
+\     , [ 0x00, 0x00, 0xEE ]
+\     , [ 0xCD, 0x00, 0xCD ]
+\     , [ 0x00, 0xCD, 0xCD ]
+\     , [ 0xE5, 0xE5, 0xE5 ]
+\     , [ 0x7F, 0x7F, 0x7F ]
+\     , [ 0xFF, 0x00, 0x00 ]
+\     , [ 0x00, 0xFF, 0x00 ]
+\     , [ 0xFF, 0xFF, 0x00 ]
+\     , [ 0x5C, 0x5C, 0xFF ]
+\     , [ 0xFF, 0x00, 0xFF ]
+\     , [ 0x00, 0xFF, 0xFF ]
+\     , [ 0xFF, 0xFF, 0xFF ] ]
+function! s:abs( n )
+    if a:n > 0
+        return a:n
+    else
+        return (0 - a:n)
+    end
+endfunction
+
+function! ESC2RGB( esc )
+    let esc = a:esc
+    if esc < 16
+        return s:base16_values[a:esc]
+    endif
+    let esc = esc - 16
+    if esc < 216
+        let r = s:colourcube_values[(esc / 36) % 6]
+        let g = s:colourcube_values[(esc / 6) % 6]
+        let b = s:colourcube_values[esc % 6]
+        return [r,g,b]
+    endif
+    let esc = esc - 216
+    if esc < 24
+        let y = 8 + esc * 10
+        return [y,y,y]
+    endif
+    let esc = esc - 24
+    echom "unknown esc code: " (esc+256)
+    return
+endfunction
+
+let s:esc2rgbDict = {}
+for i in range( 0, 255 )
+    let s:esc2rgbDict[i] = ESC2RGB(i)
+endfor
+
+function! RGB2ESC( rgb )
+    let rgb = a:rgb
+    if rgb[0] ==? "#"
+        let rgb = rgb[1:]
+    endif
+    if strlen( rgb ) == 6
+        let r = str2nr(rgb[0] . rgb[1], 16 )
+        let g = str2nr(rgb[2] . rgb[3], 16 )
+        let b = str2nr(rgb[4] . rgb[5], 16 )
+    elseif strlen( rgb ) == 3
+        let r = str2nr(rgb[0] . rgb[0], 16 )
+        let g = str2nr(rgb[1] . rgb[1], 16 )
+        let b = str2nr(rgb[2] . rgb[2], 16 )
+    else
+        echom "format error for: " . a:rgb
+        return
+    endif
+
+    let mindiff = 20
+    let diff = 0xff * 3
+    let index = 0
+    for i in range( 0, 255 )
+        let d = s:abs( s:esc2rgbDict[i][0] - r )
+\     + s:abs( s:esc2rgbDict[i][1] - g )
+\     + s:abs( s:esc2rgbDict[i][2] - b )
+        if d < mindiff
+            return i
+        elseif d < diff
+            let diff = d
+            let index = i
+        endif
+    endfor
+    return index
+endfunction

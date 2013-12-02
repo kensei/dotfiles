@@ -55,6 +55,10 @@ set display=uhex
 if exists('&ambiwidth')
   set ambiwidth=double
 endif
+" カーソル形状
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+inoremap <Esc> <Esc>lh
 
 "----------------------------------------
 " syntax
@@ -83,6 +87,7 @@ augroup END
 :hi clear CursorLine
 :hi CursorLine gui=underline
 highlight CursorLine ctermbg=black guibg=black
+" highlight CursorLine term=reverse cterm=reverse
 " コマンド実行中は再描画しない
 set lazyredraw
 
@@ -157,7 +162,7 @@ set fileencoding=utf-8
 " 保存時に行末の空白を除去する
 "autocmd BufWritePre * :%s/\s\+$//ge
 " 保存時にtabをスペースに変換する
-autocmd BufWritePre * :%s/\t/  /ge
+" autocmd BufWritePre * :%s/\t/  /ge
 " バックアップ取らない
 set nobackup
 
@@ -170,3 +175,18 @@ cmap <C-a> <Home>
 cmap <C-e> <End>
 cmap <C-d> <Del>
 cmap <C-h> <BackSpace>
+
+" create directory automatically
+augroup vimrc-auto-mkdir
+    autocmd!
+    autocmd BufWritePre * call s:auto_mkdir(expand('<afile>:p:h'), v:cmdbang)
+    function! s:auto_mkdir(dir, force)
+        if !isdirectory(a:dir) && (a:force ||
+            \ input(printf('"%s" does not exist. Create? [y/N]', a:dir)) =~? '^y\%[es]$')
+            call mkdir(iconv(a:dir, &encoding, &termencoding), 'p')
+        endif
+    endfunction
+augroup END
+
+" <C-]>でタグジャンプ時にタグが複数あったらリスト表示。カーソルがウィンドウの中心行になるようにジャンプ
+nnoremap <C-]> g<C-]>zz

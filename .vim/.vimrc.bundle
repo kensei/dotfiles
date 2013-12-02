@@ -10,36 +10,36 @@ call vundle#rc()
   Bundle 'nathanaelkane/vim-indent-guides'
 
   " vim-tcomment : コメント切替
-  Bundle 'tomtom/tcomment_vim'
+  " Bundle 'tomtom/tcomment_vim'
 
   " surround.vim : テキストを括弧で囲む／削除する
-  Bundle 'tpope/surround.vim'
+  "Bundle 'tpope/vim-surround.vim'
 
   " textobj-user : 簡単にVimエディタのテキストオブジェクトをつくれる
-  Bundle 'textobj-user'
+  "Bundle 'textobj-user'
 
   " vim-textobj-syntax : syntax hilightされたものをtext-objectに
-  Bundle 'kana/vim-textobj-syntax.git'
+  "Bundle 'kana/vim-textobj-syntax.git'
 
   " vim-textobj-plugins : いろんなものをtext-objectにする
-  Bundle 'thinca/vim-textobj-plugins.git'
+  "Bundle 'thinca/vim-textobj-plugins.git'
 
   " vim-textobj-lastpat : 最後に検索されたパターンをtext-objectに
-  Bundle 'kana/vim-textobj-lastpat.git'
+  "Bundle 'kana/vim-textobj-lastpat.git'
 
   " vim-textobj-indent : インデントされたものをtext-objectに
-  Bundle 'kana/vim-textobj-indent.git'
+  "Bundle 'kana/vim-textobj-indent.git'
 
   " vim-textobj-function : 関数の中身をtext-objectに
-  Bundle 'kana/vim-textobj-function.git'
+  "Bundle 'kana/vim-textobj-function.git'
 
   " vim-textobj-fold : 折りたたまれたアレをtext-objectに
-  Bundle 'kana/vim-textobj-fold.git'
+  "Bundle 'kana/vim-textobj-fold.git'
 " }}}
 
 " Completion {{{
   " javacomplete : Java補完
-  Bundle 'vim-scripts/javacomplete'
+  "Bundle 'vim-scripts/javacomplete'
 
   " 補完 neocomplcache.vim : 究極のVim的補完環境
   Bundle 'Shougo/neocomplcache'
@@ -50,7 +50,7 @@ call vundle#rc()
 
 " Searching/Moving{{{
   " open-browser.vim : カーソルの下のURLを開くor単語を検索エンジンで検索
-  Bundle 'tyru/open-browser.vim'
+  "Bundle 'tyru/open-browser.vim'
 
   " grep.vim : 外部のgrep利用。:Grepで対話形式でgrep :Rgrepは再帰
   Bundle 'grep.vim'
@@ -64,16 +64,16 @@ call vundle#rc()
   Bundle 'thinca/vim-ref'
 
   " SQLUtilities : SQL整形、生成ユーティリティ
-  Bundle 'SQLUtilities'
+  "Bundle 'SQLUtilities'
 
   " vim-ruby : VimでRubyを扱う際の最も基本的な拡張機能
-  Bundle 'ruby.vim'
+  "Bundle 'ruby.vim'
 
   " rails.vim : rails的なアレ
-  Bundle 'tpope/vim-rails'
+  "Bundle 'tpope/vim-rails'
 
   " Pydiction : Python用の入力補完
-  Bundle 'Pydiction'
+  "Bundle 'Pydiction'
 
   " ソースコード上のメソッド宣言、変数宣言の一覧を表示
   Bundle 'taglist.vim'
@@ -140,8 +140,11 @@ call vundle#rc()
   " vimからGit操作する
   Bundle 'tpope/vim-fugitive'
 
+  " font-size変更
+  Bundle 'thinca/vim-fontzoom'
+
   " ステータスラインをカッコよくする
-  Bundle 'Lokaltog/vim-powerline'
+  "Bundle 'Lokaltog/vim-powerline'
 " }}}
 
 " ColorSchema{{{{

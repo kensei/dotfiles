@@ -20,4 +20,4 @@ source ~/.vim/.vimrc.plugins_settings
 source ~/.vim/.vimrc.color
 
 "tags
-"source ~/.vim/.vimrc.tags
+source ~/.vim/.vimrc.tags

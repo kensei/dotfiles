@@ -1,10 +1,2 @@
 " ファイル名指定 grep対策
 set tags=.tags;
-
-"augroup SetTagsFile
-"  autocmd!
-"  autocmd FileType php set tags=~/.vim/tags/evenhunt_apps_lib.tags
-"  autocmd FileType php :set tags+=~/.vim/tags/eventhunt_apps_modules.tags
-"  autocmd FileType php :set tags+=~/.vim/tags/eventhunt_lib.tags
-"  autocmd FileType php :set tags+=~/.vim/tags/eventhunt_batch.tags
-"augroup END
