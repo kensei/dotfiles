@@ -160,6 +160,7 @@ nnoremap <Leader>re :<C-u>Ref webdict je<Space>
 nnoremap <Leader>rj :<C-u>Ref webdict ej<Space>
 nnoremap <Leader>rw :<C-u>Ref webdict wiki<Space>
 
+"------------------------------------
 " jedi-vim
 "------------------------------------
 let g:jedi#popup_on_dot = 0
@@ -170,3 +171,11 @@ let g:jedi#usages_command = "<leader>n"
 let g:jedi#rename_command = "<leader>r"
 let g:jedi#show_call_signatures = "0"
 let g:jedi#completions_command = "<C-Space>"
+
+"------------------------------------
+" vim-go
+"------------------------------------
+let g:go_bin_path = expand($GOPATH."/bin")
+let g:go_fmt_fail_silently = 1
+let g:go_fmt_autosave = 1
+let g:go_disable_autoinstall = 1
