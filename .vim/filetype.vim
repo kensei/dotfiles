@@ -1,5 +1,7 @@
 augroup filetypedetect
   au BufRead,BufNewFile *.py setfiletype python
+  au BufRead,BufNewFile *.php setfiletype php
+  au BufRead,BufNewFile *.go setfiletype go
 augroup END
 
 autocmd FileType c          setlocal sw=4 sts=4 ts=4 et

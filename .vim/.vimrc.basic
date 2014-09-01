@@ -188,3 +188,7 @@ augroup END
 
 " <C-]>でタグジャンプ時にタグが複数あったらリスト表示。カーソルがウィンドウの中心行になるようにジャンプ
 nnoremap <C-]> g<C-]>zz
+
+" Ctrl + Spaceを強制上書き
+autocmd VimEnter * imap <Nul> <C-Space>
+imap <C-Space> <C-x><C-o>
