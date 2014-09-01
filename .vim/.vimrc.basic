@@ -12,8 +12,6 @@ set backspace=indent,eol,start
 set autoread
 " スワップファイル作らない
 set noswapfile
-" ファイルタイプ判定をon
-filetype plugin on
 
 "----------------------------------------
 "メッセージの日本語化
@@ -160,9 +158,9 @@ filetype plugin on
 " utf-8で保存
 set fileencoding=utf-8
 " 保存時に行末の空白を除去する
-"autocmd BufWritePre * :%s/\s\+$//ge
+autocmd BufWritePre * :%s/\s\+$//ge
 " 保存時にtabをスペースに変換する
-" autocmd BufWritePre * :%s/\t/  /ge
+autocmd BufWritePre * :%s/\t/  /ge
 " バックアップ取らない
 set nobackup
 
