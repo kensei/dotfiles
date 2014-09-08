@@ -52,10 +52,10 @@ let Grep_Skip_Files = '*.bak *~ .ctags .tags'
 "------------------------------------
 " コメントの間にスペースを空ける
 let NERDSpaceDelims = 1
-" C-oでコメントをトグル(NERD_commenter.vim)
+" C-mでコメントをトグル(NERD_commenter.vim)
 let g:NERDCreateDefaultMappings = 0
-nmap <c-o> <Plug>NERDCommenterToggle
-vmap <c-o> <Plug>NERDCommenterToggle
+nmap <c-m> <Plug>NERDCommenterToggle
+vmap <c-m> <Plug>NERDCommenterToggle
 " 未対応ファイルタイプのエラーメッセージを表示しない
 let NERDShutUp=1
 
