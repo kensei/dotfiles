@@ -139,6 +139,9 @@ call vundle#rc()
   " font-size変更
   Bundle 'thinca/vim-fontzoom'
 
+  " バッファを閉じる
+  Bundle 'rbgrouleff/bclose.vim'
+
   " ステータスラインをカッコよくする
   "Bundle 'Lokaltog/vim-powerline'
 " }}}
