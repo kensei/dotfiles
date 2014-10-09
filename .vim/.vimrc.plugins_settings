@@ -183,23 +183,22 @@ let g:go_disable_autoinstall = 1
 "------------------------------------
 " quickrun
 "------------------------------------
+
 let g:quickrun_config={}
-let g:quickrun_config["-"] = {
-\  "outputter/buffer/split" : ":botright",
+let g:quickrun_config = {
+\ '_': {
+\  "output_encode" : "utf-8",
+\  "outputter" : "multi:buffer:quickfix",
+\  "outputter/buffer/split" : ":botright 8sp",
 \  "outputter/buffer/close_on_empty" : 1,
 \  "runner" : "vimproc",
 \  "runner/vimproc/updatetime" : 60,
-\}
-let g:quickrun_config["run/vimproc"] = {
-\  "exec": "%s:p:r %a",
-\  "output_encode" : "utf-8",
-\  "runner" : "vimproc",
-\  "outputter" : "buffer",
+\ },
 \}
 let g:quickrun_config["opengl"] = {
 \  "command" : "gcc",
 \  "cmdopt" : "-framework GLUT -framework OpenGL",
-\  'exec': ['%c %o %s -o %s:p:r', '%s:p:r %a'],
+\  "exec": ["%c %o %s -o %s:p:r", "%s:p:r %a"],
 \}
 
 " <C-c> で実行を強制終了させる
