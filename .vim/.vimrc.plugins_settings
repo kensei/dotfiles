@@ -52,7 +52,7 @@ let Grep_Skip_Files = '*.bak *~ .ctags .tags'
 "------------------------------------
 " コメントの間にスペースを空ける
 let NERDSpaceDelims = 1
-" C-mでコメントをトグル(NERD_commenter.vim)
+" \-wでコメントをトグル(NERD_commenter.vim)
 let g:NERDCreateDefaultMappings = 0
 nmap <Leader>w <Plug>NERDCommenterToggle
 vmap <Leader>w <Plug>NERDCommenterToggle
@@ -177,13 +177,15 @@ let g:jedi#completions_command = "<C-Space>"
 "------------------------------------
 let g:go_bin_path = expand($GOPATH."/bin")
 let g:go_fmt_fail_silently = 1
-let g:go_fmt_autosave = 1
+let g:go_fmt_autosave = 0
 let g:go_disable_autoinstall = 1
 
 " quickrun
 let g:quickrun_config = {
 \   "_" : {
 \       "outputter/buffer/split" : ":botright",
-\       "outputter/buffer/close_on_empty" : 1
+\       "outputter/buffer/close_on_empty" : 1,
+\       "runner" : "vimproc",
+\       "runner/vimproc/updatetime" : 60
 \   },
 \}

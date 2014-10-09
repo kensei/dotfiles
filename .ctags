@@ -1,3 +1,4 @@
+--recurse=yes
 --exclude=.svn
 --exclude=.git
 --exclude=.tags
@@ -14,14 +15,6 @@ ngmap=PHP:.php.inc
 --regex-js=/([^= ]+)[ \t]*=[ \t]*[^"]'[^']*/\1/,string/
 --regex-js=/([^= ]+)[ \t]*=[ \t]*[^']"[^"]*/\1/,string/
 --regex-python=/([A-Za-z0-9_.]+)[ \t]*=[ \t]*property\(/\1/p,property/
---langdef=scala --langmap=scala:.scala   
---regex-scala=/^[ \t]*class[ \t]+([a-zA-Z0-9_]+)/\1/c,classes/   
---regex-scala=/^[ \t]*trait[ \t]+([a-zA-Z0-9_]+)/\1/t,traits/   
---regex-scala=/^[ \t]*type[ \t]+([a-zA-Z0-9_]+)/\1/T,types/   
---regex-scala=/^[ \t]*def[ \t]+([a-zA-Z0-9_]+)/\1/m,methods/   
---regex-scala=/^[ \t]*val[ \t]+([a-zA-Z0-9_]+)/\1/C,constants/   
---regex-scala=/^[ \t]*var[ \t]+([a-zA-Z0-9_]+)/\1/l,local variables/   
---regex-scala=/^[ \t]*package[ \t]+([a-zA-Z0-9_.]+)/\1/p,packages/   
 --regex-ruby=/(^|[:;])[ \t]*([A-Z][[:alnum:]_]+) *=/\2/c,class,constant/
 --regex-ruby=/(^|;)[ \t]*(has_many|belongs_to|has_one|has_and_belongs_to_many)\(? *:([[:alnum:]_]+)/\3/f,function,association/
 --regex-ruby=/(^|;)[ \t]*(named_)?scope\(? *:([[:alnum:]_]+)/\3/f,function,named_scope/
@@ -29,3 +22,4 @@ ngmap=PHP:.php.inc
 --regex-ruby=/(^|;)[ \t]*event\(? *:([[:alnum:]_]+)/\2/f,function,aasm_event/
 --regex-ruby=/(^|;)[ \t]*event\(? *:([[:alnum:]_]+)/\2!/f,function,aasm_event/
 --regex-ruby=/(^|;)[ \t]*event\(? *:([[:alnum:]_]+)/\2?/f,function,aasm_event/
+--c++-kinds=+cdefgnsuvx-lmpt
