@@ -173,6 +173,6 @@ endif
   NeoBundle 'tsukkee/unite-tag'
 " }}}
 "
-NeoBundle 'Shougo/neobundle.vim'
+NeoBundleFetch 'Shougo/neobundle.vim'
 
 filetype plugin indent on
