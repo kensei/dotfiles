@@ -2,6 +2,7 @@ augroup filetypedetect
   au BufRead,BufNewFile *.py setfiletype python
   au BufRead,BufNewFile *.php setfiletype php
   au BufRead,BufNewFile *.go setfiletype go
+  au BufRead,BufNewFile *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 augroup END
 
 autocmd FileType c          setlocal sw=4 sts=4 ts=4 et
@@ -26,3 +27,4 @@ autocmd FileType xml        setlocal sw=4 sts=4 ts=4 et
 autocmd FileType yaml       setlocal sw=2 sts=2 ts=2 et
 autocmd FileType zsh        setlocal sw=4 sts=4 ts=4 et
 autocmd FileType scala      setlocal sw=2 sts=2 ts=2 et
+autocmd FileType markdown   setlocal sw=4 sts=4 ts=4 et
