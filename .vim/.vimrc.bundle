@@ -1,7 +1,7 @@
 filetype off
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
-  call neobundle#rc(expand('~/.vim/bundle/'))
+  call neobundle#begin(expand('~/.vim/bundle/'))
 endif
 
 " Edit {{{
@@ -110,6 +110,15 @@ endif
 
   " syntax checking plugins exist for applescript, c, coffee, cpp, css, cucumber, cuda, docbk, erlang, eruby, fortran, gentoo_metadata, go, haml, haskell, html, javascript, json, less, lua, matlab, perl, php, puppet, python, rst, ruby, sass/scss, sh, tcl, tex, vala, xhtml, xml, xslt, yaml, zpt.
   NeoBundle 'scrooloose/syntastic'
+
+  NeoBundleLazy 'nosami/Omnisharp', {
+  \   'autoload': {'filetypes': ['cs']},
+  \   'build': {
+  \     'windows': 'MSBuild.exe server/OmniSharp.sln /p:Platform="Any CPU"',
+  \     'mac': 'xbuild server/OmniSharp.sln',
+  \     'unix': 'xbuild server/OmniSharp.sln',
+  \   }
+  \ }
 " }}}
 
 " Buffer {{{
@@ -174,5 +183,9 @@ endif
 " }}}
 "
 NeoBundleFetch 'Shougo/neobundle.vim'
+
+if has('vim_starting')
+  call neobundle#end()
+endif
 
 filetype plugin indent on
