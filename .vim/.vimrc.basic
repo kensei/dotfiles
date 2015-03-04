@@ -121,7 +121,7 @@ set softtabstop=2
 " インデントの各段階に使われる空白の数
 set shiftwidth=2
 " タブを挿入するとき、代わりに空白を使う
-set expandtab
+"set expandtab
 " 行頭の余白内の<Tab>でインデント
 set smarttab
 " 'smarttab'のインデント量
