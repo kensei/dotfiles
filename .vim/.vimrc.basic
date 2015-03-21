@@ -158,9 +158,20 @@ filetype plugin on
 " utf-8で保存
 set fileencoding=utf-8
 " 保存時に行末の空白を除去する
-autocmd BufWritePre * :%s/\s\+$//ge
 " 保存時にtabをスペースに変換する
-autocmd BufWritePre * :%s/\t/  /ge
+function! s:replace_tab_to_space()
+    let position = getpos('.')
+    if &filetype != 'objc' && expand("%:e") != 'tsv'
+        echo 'tab to space'
+        :%s/\t/  /ge
+    endif
+    :%s/\s\+$//ge
+    call setpos('.', position)
+endfunction
+augroup bufwrite-pre
+    autocmd!
+    autocmd BufWritePre * call s:replace_tab_to_space()
+augroup END
 " バックアップ取らない
 set nobackup
 
@@ -173,18 +184,6 @@ cmap <C-a> <Home>
 cmap <C-e> <End>
 cmap <C-d> <Del>
 cmap <C-h> <BackSpace>
-
-" create directory automatically
-augroup vimrc-auto-mkdir
-    autocmd!
-    autocmd BufWritePre * call s:auto_mkdir(expand('<afile>:p:h'), v:cmdbang)
-    function! s:auto_mkdir(dir, force)
-        if !isdirectory(a:dir) && (a:force ||
-            \ input(printf('"%s" does not exist. Create? [y/N]', a:dir)) =~? '^y\%[es]$')
-            call mkdir(iconv(a:dir, &encoding, &termencoding), 'p')
-        endif
-    endfunction
-augroup END
 
 "----------------------------------------
 " キーバインド関係
