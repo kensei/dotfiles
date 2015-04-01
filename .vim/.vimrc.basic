@@ -12,6 +12,8 @@ set backspace=indent,eol,start
 set autoread
 " スワップファイル作らない
 set noswapfile
+" undoファイル作らない
+set noundofile
 
 "----------------------------------------
 "メッセージの日本語化
