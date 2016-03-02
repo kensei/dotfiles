@@ -103,7 +103,16 @@ endif
   NeoBundle 'kchmck/vim-coffee-script'
 
   " python
-  NeoBundle 'davidhalter/jedi-vim'
+  NeoBundleLazy 'davidhalter/jedi-vim', {
+  \   'autoload': {
+  \     'filetypes': ['python', 'python3', 'djangohtml'],
+  \   },
+  \   'build': {
+  \     'mac': 'pip install jedi',
+  \     'unix': 'pip install jedi',
+  \   }
+  \ }
+  "NeoBundle 'jmcantrell/vim-virtualenv'
 
   " go
   NeoBundle 'fatih/vim-go'

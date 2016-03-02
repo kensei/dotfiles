@@ -10,10 +10,15 @@ set fileformats=unix,dos,mac
 set backspace=indent,eol,start
 " 他で書き換えられたら自動で読み直す
 set autoread
+" バックアップファイル作らない
+set nowritebackup
+set nobackup
 " スワップファイル作らない
 set noswapfile
 " undoファイル作らない
 set noundofile
+" 新しく開く代わりにすでに開いてあるバッファを開く
+set switchbuf=useopen
 
 "----------------------------------------
 "メッセージの日本語化
