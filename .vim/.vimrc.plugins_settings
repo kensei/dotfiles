@@ -107,7 +107,7 @@ nnoremap <F4> :CMiniBufExplorer<CR>:TMiniBufExplorer<CR>
 " NERDTree
 "------------------------------------
 let g:NERDTreeShowHidden=1
-let g:NERDTreeIgnore=['\.swp$', '\.tags', '\.git$', '__pycache__']
+let g:NERDTreeIgnore=['\.swp$', '\.tags', '\.git$', '__pycache__', '\.cache', '\.idea']
 nnoremap <F2> :NERDTreeToggle<CR>
 nnoremap <F3> :NERDTreeFind<CR>
 let file_name = expand("%:p")
