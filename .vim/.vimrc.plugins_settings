@@ -233,3 +233,8 @@ function! s:bundle.hooks.on_source(bundle)
     autocmd FileType cs setlocal omnifunc=OmniSharp#Complete
 endfunction
 unlet s:bundle
+
+"------------------------------------
+" vim-js-indent
+"------------------------------------
+let g:js_indent_typescript = 1

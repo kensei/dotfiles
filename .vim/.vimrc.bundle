@@ -11,32 +11,8 @@ endif
   " visually indent guide
   NeoBundle 'nathanaelkane/vim-indent-guides'
 
-  " vim-tcomment : コメント切替
-  " NeoBundle 'tomtom/tcomment_vim'
-
   " surround.vim : テキストを括弧で囲む／削除する
   "NeoBundle 'tpope/vim-surround.vim'
-
-  " textobj-user : 簡単にVimエディタのテキストオブジェクトをつくれる
-  "NeoBundle 'textobj-user'
-
-  " vim-textobj-syntax : syntax hilightされたものをtext-objectに
-  "NeoBundle 'kana/vim-textobj-syntax'
-
-  " vim-textobj-plugins : いろんなものをtext-objectにする
-  "NeoBundle 'thinca/vim-textobj-plugins'
-
-  " vim-textobj-lastpat : 最後に検索されたパターンをtext-objectに
-  "NeoBundle 'kana/vim-textobj-lastpat'
-
-  " vim-textobj-indent : インデントされたものをtext-objectに
-  "NeoBundle 'kana/vim-textobj-indent'
-
-  " vim-textobj-function : 関数の中身をtext-objectに
-  "NeoBundle 'kana/vim-textobj-function'
-
-  " vim-textobj-fold : 折りたたまれたアレをtext-objectに
-  "NeoBundle 'kana/vim-textobj-fold'
 " }}}
 
 " Completion {{{
@@ -81,26 +57,30 @@ endif
 
   " tagsを利用したソースコード閲覧・移動補助機能 tagsファイルの自動生成
   NeoBundle 'Source-Explorer-srcexpl.vim'
-
-  " NERD_tree, taglist, srcexpl の統合
-  "NeoBundle 'trinity.vim'
-
-  " symfony
-  NeoBundle 'soh335/vim-symfony'
 " }}}
 
 " Syntax {{{
   " JavaScript
-  NeoBundle 'JavaScript-syntax'
+  NeoBundleLazy 'JavaScript-syntax', {
+  \   'autoload' : {
+  \      'filetypes' : ['javascript', 'html'],
+  \   }
+  \ }
+  NeoBundleLazy 'jason0x43/vim-js-indent', {
+  \   'autoload' : {
+  \      'filetypes' : ['javascript', 'typescript', 'html'],
+  \   }
+  \ }
 
   " jQuery
-  NeoBundle 'jQuery'
+  NeoBundleLazy 'jQuery', {
+  \   'autoload' : {
+  \      'filetypes' : ['javascript', 'html'],
+  \   }
+  \ }
 
   " markdown
   NeoBundle 'tpope/vim-markdown'
-
-  " coffee script
-  NeoBundle 'kchmck/vim-coffee-script'
 
   " python
   NeoBundleLazy 'davidhalter/jedi-vim', {
@@ -112,14 +92,27 @@ endif
   \     'unix': 'pip install jedi',
   \   }
   \ }
-  "NeoBundle 'jmcantrell/vim-virtualenv'
+  NeoBundleLazy 'jmcantrell/vim-virtualenv', {
+  \   'autoload': {
+  \     'filetypes': ['python', 'python3', 'djangohtml'],
+  \   },
+  \   'build': {
+  \     'mac': 'pip install pyflakes',
+  \     'unix': 'pip install pyflakes',
+  \   }
+  \ }
 
   " go
-  NeoBundle 'fatih/vim-go'
+  NeoBundleLazy 'fatih/vim-go', {
+  \   'autoload' : {
+  \      'filetypes' : ['go'],
+  \   }
+  \ }
 
   " syntax checking plugins exist for applescript, c, coffee, cpp, css, cucumber, cuda, docbk, erlang, eruby, fortran, gentoo_metadata, go, haml, haskell, html, javascript, json, less, lua, matlab, perl, php, puppet, python, rst, ruby, sass/scss, sh, tcl, tex, vala, xhtml, xml, xslt, yaml, zpt.
   NeoBundle 'scrooloose/syntastic'
 
+  " c#
   NeoBundleLazy 'nosami/Omnisharp', {
   \   'autoload': {'filetypes': ['cs']},
   \   'build': {
@@ -127,6 +120,11 @@ endif
   \     'mac': 'xbuild server/OmniSharp.sln',
   \     'unix': 'xbuild server/OmniSharp.sln',
   \   }
+  \ }
+
+  " typescript
+  NeoBundleLazy 'leafgarland/typescript-vim', {
+  \    'autoload' : {'filetypes' : ['typescript']}
   \ }
 " }}}
 
@@ -187,7 +185,6 @@ endif
   " unite.vim : - すべてを破壊し、すべてを繋げ - vim scriptで実装されたanythingプラグイン
   NeoBundle 'Shougo/unite.vim'
   NeoBundle 'h1mesuke/unite-outline'
-  "NeoBundle 'basyura/unite-rails'
   NeoBundle 'tsukkee/unite-tag'
 " }}}
 "
