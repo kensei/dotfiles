@@ -19,6 +19,8 @@ set noswapfile
 set noundofile
 " 新しく開く代わりにすでに開いてあるバッファを開く
 set switchbuf=useopen
+" ベル鳴らさない
+set visualbell t_vb=
 
 "----------------------------------------
 "メッセージの日本語化
