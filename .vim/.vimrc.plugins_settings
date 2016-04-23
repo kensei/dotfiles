@@ -45,7 +45,7 @@ let g:syntastic_python_flake8_args='--ignore=F999,F403,E126'
 " grep.vim
 "------------------------------------
 " 検索外のディレクトリ、ファイルパターン
-let Grep_Skip_Dirs = '.svn .git .hg .bzr'
+let Grep_Skip_Dirs = '.svn .git .hg .bzr __pycache__'
 let Grep_Skip_Files = '*.bak *~ .ctags .tags'
 
 "------------------------------------
