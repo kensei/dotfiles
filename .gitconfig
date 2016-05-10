@@ -25,3 +25,6 @@
   co = checkout
   br = branch
   cm = commit
+  pr = pull --rebase origin
+  po = push origin
+  fe = fetch
