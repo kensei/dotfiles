@@ -1,17 +1,21 @@
-mkdir homebrew && curl -L https://github.com/mxcl/homebrew/tarball/master | tar xz --strip 1 -C homebrew
+```
+$ git clone https://github.com/kensei/dotfiles.git
+$ cd dotfiles
+$ ./setup.sh
+```
 
-brew install git tig ctags curl readline coreuilts proctools wget cmake gnutls libtasn1 ossp-uuid qt weechat libgcrypt lrzxz pidof libgpg-error pkg-config tree xz
+```
+$ brew install binutils ctags curl git nkf nodebrew readline openssl tree vim wget
+```
 
-git clone https://github.com/kensei/dotfiles.git
-cd dotfiles
-./setup.sh
+```
+$ mkdir ~/.vim/bundle
+$ git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+```
 
-cd ~/.vim
-mkdir bundle
-cd bundle
-git clone https://github.com/gmarik/vundle.git
+vim => NeoBundleInstall
 
-vim → BundleInstall
-
-cd ~/.vim/bundle/vimproc/
-make -f make_mac.mak
+```
+$ cd ~/.vim/bundle/vimproc/
+$ make -f make_mac.mak
+```
