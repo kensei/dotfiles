@@ -6,6 +6,9 @@ $ ./setup.sh
 
 ```
 $ brew install binutils ctags curl git nkf nodebrew readline openssl tree vim wget
+$ brew tap caskroom/versions
+$ ls /usr/local/Homebrew/Library/Taps/caskroom
+$ brew cask install docker
 ```
 
 ```
