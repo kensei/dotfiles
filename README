@@ -1,14 +1,8 @@
 ```
+$ xcode-select --install
 $ git clone https://github.com/kensei/dotfiles.git
 $ cd dotfiles
 $ ./setup.sh
-```
-
-```
-$ brew install binutils ctags curl git nkf nodebrew readline openssl tree vim wget
-$ brew tap caskroom/versions
-$ ls /usr/local/Homebrew/Library/Taps/caskroom
-$ brew cask install docker
 ```
 
 ```
@@ -17,8 +11,3 @@ $ git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 ```
 
 vim => NeoBundleInstall
-
-```
-$ cd ~/.vim/bundle/vimproc/
-$ make -f make_mac.mak
-```
