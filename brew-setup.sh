@@ -116,4 +116,30 @@ brew cleanup -s
 
 codesign -s gdb-cert /usr/local/bin/gdb
 
+# auto start docker
+mkdir -p ~/Library/LaunchAgents
+cat << EOS > ~/Library/LaunchAgents/com.docker.machine.default.plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>EnvironmentVariables</key>
+        <dict>
+            <key>PATH</key>
+            <string>/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin</string>
+        </dict>
+        <key>Label</key>
+        <string>com.docker.machine.default</string>
+        <key>ProgramArguments</key>
+        <array>
+            <string>/usr/local/bin/docker-machine</string>
+            <string>start</string>
+            <string>default</string>
+        </array>
+        <key>RunAtLoad</key>
+        <true/>
+    </dict>
+</plist>
+EOS
+
 echo "setup Unity && fuze && justmind && pencil"
