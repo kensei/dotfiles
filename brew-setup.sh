@@ -85,10 +85,10 @@ brew install ios-deploy
 brew install jq
 brew install libimobiledevice
 brew install lua
-brew install memcached
+# brew install memcached
 brew install mercurial
-brew install mysql
-brew install nginx
+# brew install mysql
+# brew install nginx
 brew install nkf
 brew install nmap
 brew install nodebrew
@@ -101,7 +101,7 @@ brew install python3
     pip3 install --upgrade pip setuptools wheel
 )
 brew install readline
-brew install redis
+# brew install redis
 #brew install --HEAD -f screen
 brew install screenutf8 --utf8
 brew install sqlite
