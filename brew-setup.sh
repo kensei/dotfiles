@@ -24,7 +24,11 @@ brew cask install skype
 brew cask install timemachineeditor
 brew cask install the-unarchiver
 ## sdk
-brew cask install google-cloud-sdk
+# brew cask install google-cloud-sdk    # require sudo
+brew cask install java
+(
+    export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+)
 ## terminal
 brew cask install iterm2
 ## editor
@@ -46,12 +50,14 @@ brew cask install google-chrome
 brew cask install firefox
 ## graphic
 brew cask install blender
+brew cask install xquartz               # gimp use
 brew cask install gimp
 brew cask install inkscape
 ## virtual environment
 brew cask install docker
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
+brew cask install genymotion
 ## network
 brew cask install wireshark
 brew cask install filezilla
@@ -63,6 +69,8 @@ mas install 539883307 # LINE
 mas install 425424353 # The Unarchiver
 mas install 411246225 # Caffeine
 
+brew install android-sdk
+brew install android-ndk
 brew install ant
 brew install autoconf
 brew install automake
@@ -85,10 +93,11 @@ brew install ios-deploy
 brew install jq
 brew install libimobiledevice
 brew install lua
-# brew install memcached
+# brew install memcached                # move docker
 brew install mercurial
-# brew install mysql
-# brew install nginx
+brew install mono
+# brew install mysql                    # move docker
+# brew install nginx                    # move docker
 brew install nkf
 brew install nmap
 brew install nodebrew
@@ -101,7 +110,7 @@ brew install python3
     pip3 install --upgrade pip setuptools wheel
 )
 brew install readline
-# brew install redis
+# brew install redis                    # move docker
 #brew install --HEAD -f screen
 brew install screenutf8 --utf8
 brew install sqlite

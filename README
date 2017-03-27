@@ -1,3 +1,11 @@
+## make gdb codesigin
+
+```
+$ open -a "Keychain Access.app"
+```
+
+## env && dotfiles setup
+
 ```
 $ xcode-select --install
 $ ssh-keygen -t rsa
@@ -6,8 +14,10 @@ $ cd dotfiles
 $ ./setup.sh
 ```
 
+## vim setup
+
 ```
-$ mkdir ~/.vim/bundle
+$ mkdir ~/.vim/bundle && cd ~/.vim/bundle
 $ git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 ```
 
