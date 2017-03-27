@@ -101,6 +101,9 @@ brew install mono
 brew install nkf
 brew install nmap
 brew install nodebrew
+(
+    nodebrew setup
+)
 brew install openssl
 brew install pyenv
 brew install homebrew/boneyard/pyenv-pip-rehash
