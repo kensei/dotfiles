@@ -4,11 +4,15 @@
 $ open -a "Keychain Access.app"
 ```
 
-## env && dotfiles setup
-
+## env setup
 ```
 $ xcode-select --install
 $ ssh-keygen -t rsa
+```
+
+## dotfiles setup
+
+```
 $ git clone https://github.com/kensei/dotfiles.git
 $ cd dotfiles
 $ ./setup.sh
