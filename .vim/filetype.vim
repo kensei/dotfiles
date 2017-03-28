@@ -5,6 +5,7 @@ augroup filetypedetect
   au BufRead,BufNewFile *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
   au BufRead,BufNewFile *.{mm,m} setfiletype objc
   au BufRead,BufNewFile Makefike setfiletype make
+  au BufRead,BufNewFile *.ts setfiletype typescript
 augroup END
 
 autocmd FileType c          setlocal sw=4 sts=4 ts=4 et
@@ -17,6 +18,7 @@ autocmd FileType go         setlocal sw=4 sts=4 ts=4
 autocmd FileType html       setlocal sw=2 sts=2 ts=2 et
 autocmd FileType java       setlocal sw=4 sts=4 ts=4 et
 autocmd FileType javascript setlocal sw=2 sts=2 ts=2 et
+autocmd FileType typescript setlocal sw=2 sts=2 ts=2 et
 autocmd FileType markdown   setlocal sw=4 sts=4 ts=4 et
 autocmd FileType objc       setlocal sw=4 sts=4 ts=4
 autocmd FileType perl       setlocal sw=4 sts=4 ts=4 et
