@@ -12,4 +12,7 @@ sudo gem install -n /usr/local/bin cocoapods
 
 pod setup
 
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 source brew-setup.sh
