@@ -153,3 +153,5 @@ cat << EOS > ~/Library/LaunchAgents/com.docker.machine.default.plist
 EOS
 
 echo "setup Unity && fuze && justmind && pencil"
+echo "run \$ANDROID_HOME/extras/intel/Hardware_Accelerated_Execution_Manager/IntelHAXM_{ver}.dmg"
+echo "maek xamarin apndroid player and setup google play(http://opengapps.org/)"
