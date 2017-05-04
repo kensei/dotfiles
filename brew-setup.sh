@@ -62,6 +62,10 @@ brew cask install filezilla
 
 # app store
 brew install mas
+echo -n "input apple id ?> "
+read INPUT
+mas signin --dialog $INPUT
+mas install 497799835 # Xcode
 mas install 451444120 # Memory Clean
 mas install 539883307 # LINE
 mas install 425424353 # The Unarchiver
