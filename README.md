@@ -7,6 +7,7 @@ $ open -a "Keychain Access.app"
 ## env setup
 ```
 $ xcode-select --install
+$ sudo xcodebuild -license accept
 $ ssh-keygen -t rsa
 ```
 

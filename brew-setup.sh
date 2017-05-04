@@ -27,6 +27,7 @@ brew cask install java
 (
     export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 )
+brew cask install android-ndk
 ## terminal
 brew cask install iterm2
 ## editor
@@ -62,17 +63,17 @@ brew cask install filezilla
 
 # app store
 brew install mas
-echo -n "input apple id ?> "
-read INPUT
-mas signin --dialog $INPUT
+mas account | grep "Not signed in"
+if [ $? -eq 0 ]; then
+  echo -n "input apple id ?> "
+  read INPUT
+  mas signin --dialog $INPUT
+fi
 mas install 497799835 # Xcode
 mas install 451444120 # Memory Clean
 mas install 539883307 # LINE
 mas install 425424353 # The Unarchiver
-mas install 411246225 # Caffeine
 
-brew install android-sdk
-brew install android-ndk
 brew install ant
 brew install autoconf
 brew install automake
@@ -108,7 +109,6 @@ brew install nodebrew
 )
 brew install openssl
 brew install pyenv
-brew install homebrew/boneyard/pyenv-pip-rehash
 brew install python
 brew install python3
 (
@@ -158,4 +158,4 @@ EOS
 
 echo "setup Unity && fuze && justmind && pencil"
 echo "run \$ANDROID_HOME/extras/intel/Hardware_Accelerated_Execution_Manager/IntelHAXM_{ver}.dmg"
-echo "maek xamarin apndroid player and setup google play(http://opengapps.org/)"
+echo "make xamarin apndroid player and setup google play(http://opengapps.org/)"

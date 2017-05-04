@@ -37,9 +37,6 @@ alias java='java -Dfile.encoding=UTF-8'
 alias javadoc='javadoc -J-Dfile.encoding=UTF-8'
 alias jar='jar -J-Dfile.encoding=UTF-8'
 
-source ~/dotfiles/git-prompt.sh
-source ~/dotfiles/git-completion.bash
-
 # share bash_history
 function share_history {
     history -a
