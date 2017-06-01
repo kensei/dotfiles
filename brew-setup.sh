@@ -16,7 +16,6 @@ brew cask install bettertouchtool
 brew cask install caffeine
 brew cask install dropbox
 brew cask install evernote
-brew cask install karabiner-elements
 brew cask install keepassx
 brew cask install skype
 brew cask install timemachineeditor
@@ -37,7 +36,6 @@ brew cask install sublime-text
 brew cask install netbeans-java-ee
 brew cask install xamarin-studio
 brew cask install xamarin-android-player
-brew cask install android-studio
 ## decompiler
 brew cask install jd-gui
 brew cask install jad
