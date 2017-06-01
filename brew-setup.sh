@@ -92,6 +92,7 @@ brew install graphviz
 brew install ideviceinstaller
 brew install ios-deploy
 brew install jq
+brew install libxml2 libxslt libiconv
 brew install libimobiledevice
 brew install lua
 # brew install memcached                # move docker
