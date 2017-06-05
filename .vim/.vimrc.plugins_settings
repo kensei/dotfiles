@@ -44,6 +44,8 @@ let g:syntastic_python_flake8_args='--ignore=F999,F403,E126'
 let g:syntastic_cs_checkers = ['syntax', 'semantic', 'issues']
 " javasctipr
 let g:syntastic_javascript_checkers=['eslint']
+" ruby
+let g:syntastic_ruby_checkers = ['rubocop']
 
 " ------------------------------------
 " grep.vim
@@ -73,16 +75,6 @@ let NERDShutUp=1
 let g:surround_{char2nr('e')} = "begin \r end"
 let g:surround_{char2nr('d')} = "do \r end"
 let g:surround_{char2nr("-")} = ":\r"
-
-"------------------------------------
-" Srcexp
-"------------------------------------
-" [Srcexpl] tagsを利用したソースコード閲覧・移動補助機能
-let g:SrcExpl_UpdateTags    = 1         " tagsをsrcexpl起動時に自動で作成（更新）
-let g:SrcExpl_RefreshTime   = 0         " 自動表示するまでの時間(0:off)
-let g:SrcExpl_WinHeight     = 9         " プレビューウインドウの高さ
-"let g:SrcExpl_RefreshMapKey = "<Space>" " 手動表示のMAP
-"let g:SrcExpl_GoBackMapKey  = "<C-b>"   " 戻る機能のMAP
 
 "------------------------------------
 " taglist.Vim

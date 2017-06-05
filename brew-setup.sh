@@ -107,6 +107,7 @@ brew install nodebrew
     nodebrew setup
 )
 brew install openssl
+brew install plantuml
 brew install pyenv
 brew install python
 brew install python3

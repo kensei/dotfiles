@@ -39,15 +39,13 @@ endif
 
   " perldocやphpmanual等のリファレンスをvim上で見る
   NeoBundle 'thinca/vim-ref'
+  NeoBundle 'yuku-t/vim-ref-ri'
 
   " SQLUtilities : SQL整形、生成ユーティリティ
   "NeoBundle 'SQLUtilities'
 
   " ソースコード上のメソッド宣言、変数宣言の一覧を表示
   NeoBundle 'taglist.vim'
-
-  " tagsを利用したソースコード閲覧・移動補助機能 tagsファイルの自動生成
-  NeoBundle 'Source-Explorer-srcexpl.vim'
 
   " typescript
   NeoBundleLazy 'clausreinke/typescript-tools.vim', {
