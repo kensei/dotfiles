@@ -15,4 +15,7 @@ pod setup
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+mkdir -p develop/tools/plantuml
+curl -L http://sourceforge.net/projects/plantuml/files/plantuml.jar/download -o develop/tools/plantuml/plantuml.jar
+
 source brew-setup.sh

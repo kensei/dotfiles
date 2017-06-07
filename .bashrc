@@ -7,6 +7,13 @@ export LS_COLORS
 LSCOLORS='GxFxCxDxBxegedabagaced'
 export LSCOLORS
 #export PS1="[\[\e[32;1m\]\W\[\e[0m\]]$"
+if type __git_ps1 >/dev/null 2>&1; then
+    :
+else
+    if [ -f $(brew --prefix)/etc/bash_completion.d/git-prompt.sh ]; then
+        source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
+    fi
+fi
 export PS1='[\[\033[01;32m\]\h\[\033[00m\]:\[\033[01;36m\]\W\[\033[00m\]$(__git_ps1 "(%s)")]$ '
 
 case $(uname -s) in

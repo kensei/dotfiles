@@ -236,3 +236,8 @@ let g:OmniSharp_timeout = 1
 " vim-js-indent
 "------------------------------------
 let g:js_indent_typescript = 1
+
+"------------------------------------
+" plantuml
+"------------------------------------
+let g:plantuml_executable_script = "~/bin/plantuml.sh"
