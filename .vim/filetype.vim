@@ -6,6 +6,8 @@ augroup filetypedetect
   au BufRead,BufNewFile *.{mm,m} setfiletype objc
   au BufRead,BufNewFile Makefike setfiletype make
   au BufRead,BufNewFile *.ts setfiletype typescript
+  au BufRead,BufNewFile *.jbuilder setfiletype ruby
+  au BufRead,BufNewFile *.slim setfiletype ruby
 augroup END
 
 autocmd FileType c          setlocal sw=4 sts=4 ts=4 et
