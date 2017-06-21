@@ -51,7 +51,7 @@ let g:syntastic_ruby_checkers = ['rubocop']
 " grep.vim
 "------------------------------------
 " 検索外のディレクトリ、ファイルパターン
-let Grep_Skip_Dirs = '.svn .git .hg .bzr __pycache__'
+let Grep_Skip_Dirs = '.svn .git .hg .bzr __pycache__ log logs tmp temp'
 let Grep_Skip_Files = '*.bak *~ .ctags .tags'
 
 "------------------------------------
