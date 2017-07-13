@@ -18,17 +18,9 @@ endif
 
   " 補完 neocomplcache.vim : 究極のVim的補完環境
   NeoBundle 'Shougo/neocomplcache'
-
-  " neocomplcacheのsinpet補完
-  "NeoBundle 'Shougo/neocomplcache-snippets-complete'
-  NeoBundle 'Shougo/neosnippet'
-  NeoBundle "Shougo/neosnippet-snippets"
 " }}}
 
 " Searching/Moving{{{
-  " open-browser.vim : カーソルの下のURLを開くor単語を検索エンジンで検索
-  "NeoBundle 'tyru/open-browser.vim'
-
   " grep.vim : 外部のgrep利用。:Grepで対話形式でgrep :Rgrepは再帰
   NeoBundle 'grep.vim'
 " }}}
@@ -161,17 +153,11 @@ endif
   \   },
   \ }
 
-  " vimからGit操作する
-  NeoBundle 'tpope/vim-fugitive'
-
   " font-size変更
   NeoBundle 'thinca/vim-fontzoom'
 
   " バッファを閉じる
   NeoBundle 'rbgrouleff/bclose.vim'
-
-  " ステータスラインをカッコよくする
-  "NeoBundle 'Lokaltog/vim-powerline'
 " }}}
 
 " ColorSchema{{{{

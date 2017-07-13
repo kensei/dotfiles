@@ -38,3 +38,6 @@
 --regex-ruby=/(^|;)[ \t]*event\(? *:([[:alnum:]_]+)/\2?/f,function,aasm_event/
 
 --c++-kinds=+cdefgnsuvx-lmpt
+--html-kinds=af
+--java-kinds=cfimp
+--ruby-kinds=cfm

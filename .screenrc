@@ -59,7 +59,8 @@ caption always '%?%F%{= wB}%:%{=b wk}%?%2n%f%07=%t%='
 #  %=         - truncation/paddion point.
 # %{= .b}     - blue on default background.
 #  %l         - host load average.
-hardstatus alwayslastline '%m/%d %02c:%s %{= .W}%H%{-} %L=%-w%45L>%{=u W.}%n %t%{-}%+w %-17<%=%{= .b}(%l)'
+#hardstatus alwayslastline '%m/%d %02c:%s %{= .W}%H%{-} %L=%-w%45L>%{=u W.}%n %t%{-}%+w %-17<%=%{= .b}(%l)'
+hardstatus alwayslastline '%{= kw}%02c:%s %{= .y}%H %L=%{= .b}%-w%46>%{= .r}%n %t*%{= .b}%+w%-16=%{= .y}[%l]'
 
 # その他のメッセージ
 sorendition "+rb .G"
