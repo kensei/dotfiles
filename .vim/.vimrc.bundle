@@ -153,6 +153,9 @@ endif
   \   },
   \ }
 
+  " vimからGit操作する
+  NeoBundle 'tpope/vim-fugitive'
+
   " font-size変更
   NeoBundle 'thinca/vim-fontzoom'
 
