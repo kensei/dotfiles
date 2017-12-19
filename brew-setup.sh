@@ -10,6 +10,7 @@ brew tap rcmdnk/homebrew-rcmdnkpac
 brew cask --version
 ## tool
 brew cask install amazon-music
+brew cask install android-studio
 brew cask install appcleaner
 brew cask install bartender
 brew cask install bettertouchtool
@@ -156,6 +157,6 @@ cat << EOS > ~/Library/LaunchAgents/com.docker.machine.default.plist
 </plist>
 EOS
 
-echo "setup Unity && Android Studio && fuze && justmind && pencil"
+echo "setup Unity && fuze && justmind && pencil"
 echo "run \$ANDROID_HOME/extras/intel/Hardware_Accelerated_Execution_Manager/IntelHAXM_{ver}.dmg"
 echo "make xamarin apndroid player and setup google play(http://opengapps.org/)"
