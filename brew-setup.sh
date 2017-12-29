@@ -18,6 +18,7 @@ brew cask install caffeine
 brew cask install dropbox
 brew cask install evernote
 brew cask install keepassx
+brew cask install pritunl
 brew cask install skype
 brew cask install timemachineeditor
 brew cask install the-unarchiver

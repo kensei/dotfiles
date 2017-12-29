@@ -11,3 +11,7 @@ autocmd FileType html :set fileencoding=utf-8
 autocmd FileType xml :set fileencoding=utf-8
 autocmd FileType java :set fileencoding=utf-8
 autocmd FileType scala :set fileencoding=utf-8
+autocmd FileType python :set fileencoding=utf-8
+autocmd FileType ruby :set fileencoding=utf-8
+autocmd FileType sh :set fileencoding=utf-8
+autocmd FileType go :set fileencoding=utf-8

@@ -33,10 +33,10 @@ let g:Powerline_symbols = 'fancy'
 "------------------------------------
 " Syntastic
 "------------------------------------
-let g:syntastic_error_symbol = '!'
-let g:syntastic_style_error_symbol = '!'
-let g:syntastic_warning_symbol = '?'
-let g:syntastic_style_warning_symbol = '?'
+let g:syntastic_error_symbol = '!>'
+let g:syntastic_style_error_symbol = '!>'
+let g:syntastic_warning_symbol = '?>'
+let g:syntastic_style_warning_symbol = '?>'
 " エラー行をsignで表示する
 let g:syntastic_enable_signs = 1
 " 可能ならhighligt表示する
@@ -104,6 +104,7 @@ let file_name = expand("%:p")
 if has('vim_starting') &&  file_name == ""
     autocmd VimEnter * execute 'NERDTree ./'
 endif
+let g:NERDTreeWinSize=36
 
 "------------------------------------
 " vim-indent-guides
