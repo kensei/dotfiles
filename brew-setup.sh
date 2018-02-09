@@ -36,8 +36,7 @@ brew cask install 0xed                  # binary viewer
 brew cask install sublime-text
 ## ide
 brew cask install netbeans-java-ee
-brew cask install xamarin-studio
-brew cask install xamarin-android-player
+brew cask install visual-studio
 ## decompiler
 brew cask install jd-gui
 brew cask install jad
