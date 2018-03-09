@@ -19,3 +19,5 @@ mkdir -p develop/tools/plantuml
 curl -L http://sourceforge.net/projects/plantuml/files/plantuml.jar/download -o develop/tools/plantuml/plantuml.jar
 
 source brew-setup.sh
+
+curl -L https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/android4me/AXMLPrinter2.jar -o $HOME/Library/android/sdk/tools/AXMLPrinter2.jar
