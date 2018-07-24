@@ -109,6 +109,7 @@ brew install nodebrew
 )
 brew install oath-toolkit
 brew install openssl
+brew link --force openssl
 brew install pyenv
 brew install python
 brew install python3

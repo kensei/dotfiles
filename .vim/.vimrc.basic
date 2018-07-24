@@ -73,8 +73,8 @@ inoremap <Esc> <Esc>lh
 " syntax
 syntax on
 " タブや改行を表示
+set listchars=tab:>-,extends:<,trail:-
 set list
-set listchars=tab:>-,extends:<,trail:-,eol:<
 highlight SpecialKey guifg=lightgrey
 highlight NonText term=underline guifg=lightgrey
 " 全角スペースを視覚化
@@ -84,19 +84,24 @@ augroup highlightZenkakuSpace
   autocmd VimEnter,WinEnter * match ZenkakuSpace /　/
 augroup END
 " カーソル行をハイライト
-set cursorline
+" set cursorline
 " カレントウィンドウにのみ罫線を引く
-augroup cch
-  autocmd! cch
-  autocmd WinLeave * set nocursorline
-  autocmd WinEnter,BufRead * set cursorline
-augroup END
+" augroup cch
+  " autocmd! cch
+  " autocmd WinLeave * set nocursorline
+  " autocmd WinEnter,BufRead * set cursorline
+" augroup END
 :hi clear CursorLine
 :hi CursorLine gui=underline
 highlight CursorLine ctermbg=black guibg=black
-" highlight CursorLine term=reverse cterm=reverse
+highlight CursorLine term=reverse cterm=reverse
 " コマンド実行中は再描画しない
 set lazyredraw
+" rubyは500行超える場合は描画範囲絞る
+augroup vimrc-highlight
+  autocmd!
+  autocmd Syntax ruby if 500 < line('$') | syntax sync minlines=120 | endif
+augroup END
 
 "----------------------------------------
 " serch
