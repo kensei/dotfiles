@@ -129,6 +129,7 @@ brew install wget
 # clean up
 brew cask cleanup
 brew cleanup -s
+brew prune
 
 codesign -s gdb-cert /usr/local/bin/gdb
 
