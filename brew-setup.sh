@@ -53,6 +53,7 @@ brew cask install gimp
 brew cask install inkscape
 ## virtual environment
 brew cask install docker
+brew cask install minicube
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
 brew cask install genymotion
