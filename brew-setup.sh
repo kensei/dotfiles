@@ -128,7 +128,6 @@ brew install w3m
 brew install wget
 
 # clean up
-brew cask cleanup
 brew cleanup -s
 brew prune
 
