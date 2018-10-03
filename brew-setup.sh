@@ -26,7 +26,7 @@ brew cask install the-unarchiver
 # brew cask install google-cloud-sdk    # require sudo
 brew cask install java
 (
-    export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+    export JAVA_HOME=$(/usr/libexec/java_home -v 1.11)
 )
 brew cask install android-ndk
 ## terminal
@@ -159,6 +159,6 @@ cat << EOS > ~/Library/LaunchAgents/com.docker.machine.default.plist
 </plist>
 EOS
 
-echo "setup Unity && fuze && justmind && pencil && ps remote"
+echo "setup Unity && justmind && pencil && ps remote"
 echo "run \$ANDROID_HOME/extras/intel/Hardware_Accelerated_Execution_Manager/IntelHAXM_{ver}.dmg"
 echo "make xamarin apndroid player and setup google play(http://opengapps.org/)"
