@@ -38,6 +38,8 @@ brew cask install sublime-text
 ## ide
 brew cask install netbeans-java-ee
 brew cask install visual-studio
+## prototyping tool
+brew cask install origami-studio
 ## decompiler
 brew cask install jd-gui
 brew cask install jad
@@ -114,6 +116,7 @@ brew install nodebrew
 brew install oath-toolkit
 brew install openssl
 brew link --force openssl
+brew install plantuml
 brew install pyenv
 brew install python
 brew install python3
