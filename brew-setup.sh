@@ -120,6 +120,7 @@ brew install python3
 brew install readline
 # brew install redis                    # move docker
 #brew install --HEAD -f screen
+brew install rsync
 brew install screenutf8 --utf8
 brew install sqlite
 brew install tree
