@@ -5,6 +5,7 @@
 --exclude=.svn
 --exclude=.git
 --exclude=.tags
+--exclude=*.sql
 --exclude=*.yml
 --exclude=*.min.js
 
