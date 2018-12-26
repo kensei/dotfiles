@@ -29,6 +29,7 @@ brew cask install java
     export JAVA_HOME=$(/usr/libexec/java_home -v 1.11)
 )
 brew cask install android-ndk
+brew cask install unity-hub
 ## terminal
 brew cask install iterm2
 ## editor
@@ -60,6 +61,8 @@ brew cask install genymotion
 ## network
 brew cask install wireshark
 brew cask install filezilla
+## debug
+brew cask install postman
 
 # app store
 brew install mas
@@ -160,6 +163,6 @@ cat << EOS > ~/Library/LaunchAgents/com.docker.machine.default.plist
 </plist>
 EOS
 
-echo "setup Unity && justmind && pencil && ps remote"
+echo "setup justmind && pencil && ps remote"
 echo "run \$ANDROID_HOME/extras/intel/Hardware_Accelerated_Execution_Manager/IntelHAXM_{ver}.dmg"
 echo "make xamarin apndroid player and setup google play(http://opengapps.org/)"
