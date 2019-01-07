@@ -1,8 +1,22 @@
 ## make gdb codesigin
 
+### open
+
 ```
 $ open -a "Keychain Access.app"
 ```
+
+### make cert
+
+* choose menu [create a certificate...]
+* create your certificate dialog
+  * input name [gdb-cert]
+  * select [code signing]
+  * check [let me override defaults]
+* certificate information dialog
+  * input validity period => max day
+* specify a location for the certificate dialog
+  * select [system]
 
 ## env setup
 ```
