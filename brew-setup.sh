@@ -1,13 +1,10 @@
 #!/bin/bash
 
-# tap
-brew tap homebrew/dupes
-brew tap homebrew/versions
-brew tap homebrew/binary
-brew tap rcmdnk/homebrew-rcmdnkpac
+sudo chown -R $(whoami) /usr/local/lib/pkgconfig
 
-# cask
-brew cask --version
+# tap
+brew tap rcmdnk/homebrew-rcmdnkpac # screen
+
 ## tool
 brew cask install amazon-music
 brew cask install android-studio
@@ -56,7 +53,7 @@ brew cask install gimp
 brew cask install inkscape
 ## virtual environment
 brew cask install docker
-brew cask install minicube
+
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
 brew cask install genymotion
@@ -75,10 +72,14 @@ if [ $? -eq 0 ]; then
   mas signin --dialog $INPUT
 fi
 mas install 497799835 # Xcode
+(
+    sudo xcodebuild -license accept
+)
 mas install 451444120 # Memory Clean
 mas install 539883307 # LINE
 mas install 425424353 # The Unarchiver
 
+# homebrew
 brew install ant
 brew install autoconf
 brew install automake
