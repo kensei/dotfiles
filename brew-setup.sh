@@ -20,7 +20,7 @@ brew cask install skype
 brew cask install timemachineeditor
 brew cask install the-unarchiver
 ## sdk
-# brew cask install google-cloud-sdk    # require sudo
+brew cask install google-cloud-sdk
 brew cask install java
 (
     export JAVA_HOME=$(/usr/libexec/java_home -v 1.11)
