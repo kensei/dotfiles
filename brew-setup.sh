@@ -87,7 +87,10 @@ brew install awscli
 brew install bash-completion
 brew install binutils
 brew install ctags
-brew install curl
+brew install cocoapods
+(
+    pod setup
+)
 brew install coreutils
 brew install gdb
 (
@@ -131,6 +134,10 @@ brew install rsync
 brew install screenutf8 --utf8
 brew install sqlite
 brew install tree
+brew install --HEAD usbmuxd
+(
+    brew link usbmuxd
+)
 brew install vim --with-lua --with-python3
 brew install w3m
 brew install wget
