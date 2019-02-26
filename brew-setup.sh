@@ -110,6 +110,7 @@ brew install lua
 brew install mercurial
 brew install mono
 # brew install mysql                    # move docker
+brew install netcat
 # brew install nginx                    # move docker
 brew install nkf
 brew install nmap
