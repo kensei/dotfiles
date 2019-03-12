@@ -89,7 +89,10 @@ brew install awscli
 brew install bash-completion
 brew install binutils
 brew install ctags
-brew install curl
+brew install cocoapods
+(
+    pod setup
+)
 brew install coreutils
 brew install gdb
 (
@@ -109,6 +112,7 @@ brew install lua
 brew install mercurial
 brew install mono
 # brew install mysql                    # move docker
+brew install netcat
 # brew install nginx                    # move docker
 brew install nkf
 brew install nmap
@@ -133,13 +137,16 @@ brew install rsync
 brew install screenutf8 --utf8
 brew install sqlite
 brew install tree
+brew install --HEAD usbmuxd
+(
+    brew link usbmuxd
+)
 brew install vim --with-lua --with-python3
 brew install w3m
 brew install wget
 
 # clean up
 brew cleanup -s
-brew prune
 
 codesign -s gdb-cert /usr/local/bin/gdb
 
