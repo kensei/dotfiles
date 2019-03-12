@@ -78,6 +78,8 @@ mas install 497799835 # Xcode
 mas install 451444120 # Memory Clean
 mas install 539883307 # LINE
 mas install 425424353 # The Unarchiver
+mas install 417375580 # BetterSnapTool
+mas install 803453959 # slack
 
 # homebrew
 brew install ant
