@@ -113,6 +113,7 @@ brew install lua
 brew install mercurial
 brew install mono
 # brew install mysql                    # move docker
+brew install mysql-client
 brew install netcat
 # brew install nginx                    # move docker
 brew install nkf
@@ -124,6 +125,7 @@ brew install nodebrew
 brew install oath-toolkit
 brew install openssl
 brew link --force openssl
+brew install pandoc
 brew install plantuml
 brew install pyenv
 brew install python
