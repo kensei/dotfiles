@@ -82,6 +82,7 @@ mas install 417375580 # BetterSnapTool
 mas install 803453959 # slack
 
 # homebrew
+brew install ansible
 brew install ant
 brew install autoconf
 brew install automake
