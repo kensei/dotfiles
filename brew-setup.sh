@@ -16,6 +16,7 @@ brew cask install dropbox
 brew cask install evernote
 brew cask install keepassx
 brew cask install pritunl
+brew cask install skitch
 brew cask install skype
 brew cask install timemachineeditor
 brew cask install the-unarchiver
@@ -136,7 +137,7 @@ brew install python3
     pip3 install --upgrade pip setuptools wheel
 )
 brew install readline
-# brew install redis                    # move docker
+brew install redis
 #brew install --HEAD -f screen
 brew install rsync
 brew install screenutf8 --utf8
