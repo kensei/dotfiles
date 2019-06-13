@@ -12,6 +12,7 @@ brew cask install appcleaner
 brew cask install bartender
 brew cask install bettertouchtool
 brew cask install caffeine
+brew cask install clipy
 brew cask install dropbox
 brew cask install evernote
 brew cask install keepassx
