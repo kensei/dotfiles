@@ -34,6 +34,7 @@ brew cask install iterm2
 ## editor
 brew cask install 0xed                  # binary viewer
 brew cask install sublime-text
+brew cask install marp                  # markdown presentation slide
 ## ide
 brew cask install netbeans-java-ee
 brew cask install visual-studio
