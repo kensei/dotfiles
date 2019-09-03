@@ -4,6 +4,7 @@ sudo chown -R $(whoami) /usr/local/lib/pkgconfig
 
 # tap
 brew tap rcmdnk/homebrew-rcmdnkpac # screen
+brew tap homebrew/cask-versions
 
 ## tool
 brew cask install amazon-music
