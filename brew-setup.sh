@@ -111,6 +111,7 @@ brew install gradle
 brew install graphviz
 brew install ideviceinstaller
 brew install ios-deploy
+brew install jenv
 brew install jq
 brew install libxml2 libxslt libiconv
 brew install libimobiledevice
