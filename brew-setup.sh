@@ -16,6 +16,7 @@ brew cask install caffeine
 brew cask install clipy
 brew cask install dropbox
 brew cask install evernote
+brew cask install google-backup-and-sync
 brew cask install keepassx
 brew cask install pritunl
 brew cask install skitch
