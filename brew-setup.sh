@@ -31,6 +31,7 @@ brew cask install java
 )
 brew cask install android-ndk
 brew cask install unity-hub
+brew cask install yt-music
 ## terminal
 brew cask install iterm2
 ## editor
