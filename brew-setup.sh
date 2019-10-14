@@ -120,6 +120,7 @@ brew install libimobiledevice
 brew install lua
 # brew install memcached                # move docker
 brew install mercurial
+brew install maven
 brew install mono
 # brew install mysql                    # move docker
 brew install mysql-client
