@@ -107,6 +107,7 @@ brew install gdb
   echo "set startup-with-shell off"
 ) > ~/.gdbinit
 brew install c-kermit
+brew install direnv
 brew install git
 brew install go
 brew install gradle
