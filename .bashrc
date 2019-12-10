@@ -53,3 +53,22 @@ function share_history {
 PROMPT_COMMAND='share_history'
 shopt -u histappend
 export HISTSIZE=9999
+
+function clear_docker_log() {
+    local container_id="${1}"
+    logfile=$(docker inspect $container_id --format "{{.LogPath}}")
+    screen_name="docker_$(date +%s)"
+
+    # LinuxKit にシリアル接続(detached screen として)
+    screen -d -m -S ${screen_name} ~/Library/Containers/com.docker.docker/Data/vms/0/tty
+    # ログを空にするコマンドを送信
+    # 末尾の echo は Enter キー入力のエミュレート
+    screen -S ${screen_name} -p 0 -X stuff $":> ${logfile}"$(echo -ne '\015')
+    # シリアル接続を閉じる
+    screen -S ${screen_name} -X quit
+}
+
+export DIRENV_PATH=/usr/local/bin/direnv
+if [ -f "${DIRENV_PATH}" ]; then
+    eval "$(direnv hook bash)"
+fi
