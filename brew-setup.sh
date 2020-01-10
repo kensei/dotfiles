@@ -150,7 +150,10 @@ brew install redis
 brew install rsync
 brew install screenutf8 --utf8
 brew install sqlite
-brew install terraform
+brew install tfenv
+(
+    tfenv install 0.12.19
+)
 brew install tree
 brew install --HEAD usbmuxd
 (
