@@ -150,6 +150,7 @@ brew install redis
 brew install rsync
 brew install screenutf8 --utf8
 brew install sqlite
+brew install terraform
 brew install tree
 brew install --HEAD usbmuxd
 (
