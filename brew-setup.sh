@@ -150,6 +150,7 @@ brew install redis
 brew install rsync
 brew install screenutf8 --utf8
 brew install sqlite
+brew install terraforming
 brew install tfenv
 (
     tfenv install 0.12.19
