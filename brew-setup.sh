@@ -82,11 +82,12 @@ mas install 497799835 # Xcode
 (
     sudo xcodebuild -license accept
 )
-mas install 451444120 # Memory Clean
-mas install 539883307 # LINE
-mas install 425424353 # The Unarchiver
-mas install 417375580 # BetterSnapTool
-mas install 803453959 # slack
+mas install 451444120  # Memory Clean
+mas install 539883307  # LINE
+mas install 425424353  # The Unarchiver
+mas install 417375580  # BetterSnapTool
+mas install 803453959  # slack
+mas install 1295203466 # Microsoft Remote Desktop
 
 # homebrew
 brew install ansible
