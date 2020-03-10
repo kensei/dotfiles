@@ -1,6 +1,7 @@
 #!/bin/bash
 
-sudo chown -R $(whoami) /usr/local/lib/pkgconfig
+sudo chown -R $(whoami):admin /usr/local
+sudo chmod -R g+w /usr/local
 
 # tap
 brew tap rcmdnk/homebrew-rcmdnkpac # screen

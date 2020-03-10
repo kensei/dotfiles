@@ -1,3 +1,9 @@
+# setup
+
+## change default shell to bash
+
+`chsh -s /bin/bash`
+
 ## make gdb codesigin
 
 ### open
@@ -19,9 +25,16 @@ $ open -a "Keychain Access.app"
   * select [system]
 
 ## env setup
+
 ```
 $ xcode-select --install
 $ ssh-keygen -t rsa
+```
+
+## brew setup
+
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 ## dotfiles setup

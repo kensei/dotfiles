@@ -133,9 +133,6 @@ endif
 
   " NERDTree : ツリー型エクスプローラ
   NeoBundle 'The-NERD-tree'
-
-  " vtreeexplorer.vim : ツリー状にファイルやディレクトリの一覧を表示
-  NeoBundle 'vtreeexplorer'
 " }}}
 
 " Encording {{{
