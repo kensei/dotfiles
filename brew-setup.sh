@@ -70,6 +70,8 @@ brew cask install filezilla
 brew cask install postman
 ## markdown => pdf
 brew cask install wkhtmltopdf
+## meeting
+brew cask install zoomus
 
 # app store
 brew install mas
@@ -200,3 +202,5 @@ EOS
 echo "setup justmind && pencil && ps remote"
 echo "run \$ANDROID_HOME/extras/intel/Hardware_Accelerated_Execution_Manager/IntelHAXM_{ver}.dmg"
 echo "make xamarin apndroid player and setup google play(http://opengapps.org/)"
+
+brew doctor
