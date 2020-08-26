@@ -154,6 +154,7 @@ brew install redis
 brew install rsync
 brew install screenutf8 --utf8
 brew install sqlite
+brew install swift-format
 brew install terraforming
 brew install tfenv
 (
