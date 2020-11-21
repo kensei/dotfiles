@@ -9,7 +9,6 @@ brew tap homebrew/cask-versions
 
 ## tool
 brew cask install amazon-music
-brew cask install android-studio
 brew cask install appcleaner
 brew cask install bartender
 brew cask install bettertouchtool
@@ -25,6 +24,7 @@ brew cask install skype
 brew cask install timemachineeditor
 brew cask install the-unarchiver
 ## sdk
+brew cask install android-studio
 brew cask install google-cloud-sdk
 brew cask install java
 (
@@ -60,8 +60,6 @@ brew cask install gimp
 brew cask install inkscape
 ## virtual environment
 brew cask install docker
-brew cask install virtualbox
-brew cask install virtualbox-extension-pack
 brew cask install genymotion
 ## network
 brew cask install wireshark
