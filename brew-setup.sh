@@ -69,7 +69,7 @@ brew cask install postman
 ## markdown => pdf
 brew cask install wkhtmltopdf
 ## meeting
-brew cask install zoomus
+brew cask install zoom
 
 # app store
 brew install mas
