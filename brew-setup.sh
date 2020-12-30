@@ -139,6 +139,7 @@ brew install oath-toolkit
 brew install openssl
 brew link --force openssl
 brew install pandoc
+brew install pipenv
 brew install plantuml
 brew install pyenv
 brew install python
