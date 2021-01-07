@@ -26,10 +26,6 @@ brew cask install the-unarchiver
 ## sdk
 brew cask install android-studio
 brew cask install google-cloud-sdk
-brew cask install java
-(
-    export JAVA_HOME=$(/usr/libexec/java_home -v 1.11)
-)
 brew cask install android-ndk
 brew cask install unity-hub
 brew cask install yt-music
@@ -40,7 +36,6 @@ brew cask install 0xed                  # binary viewer
 brew cask install sublime-text
 brew cask install marp                  # markdown presentation slide
 ## ide
-brew cask install netbeans-java-ee
 brew cask install visual-studio
 ## prototyping tool
 brew cask install origami-studio
