@@ -8,63 +8,63 @@ brew tap rcmdnk/homebrew-rcmdnkpac # screen
 brew tap homebrew/cask-versions
 
 ## tool
-brew cask install amazon-music
-brew cask install appcleaner
-brew cask install bartender
-brew cask install bettertouchtool
-brew cask install caffeine
-brew cask install clipy
-brew cask install dropbox
-brew cask install evernote
-brew cask install google-backup-and-sync
-brew cask install keepassx
-brew cask install pritunl
-brew cask install skitch
-brew cask install skype
-brew cask install timemachineeditor
-brew cask install the-unarchiver
+brew install --cask amazon-music
+brew install --cask appcleaner
+brew install --cask bartender
+brew install --cask bettertouchtool
+brew install --cask caffeine
+brew install --cask clipy
+brew install --cask dropbox
+brew install --cask evernote
+brew install --cask google-backup-and-sync
+brew install --cask keepassx
+brew install --cask pritunl
+brew install --cask skitch
+brew install --cask skype
+brew install --cask timemachineeditor
+brew install --cask the-unarchiver
 ## sdk
-brew cask install android-studio
-brew cask install google-cloud-sdk
-brew cask install android-ndk
-brew cask install unity-hub
-brew cask install yt-music
+brew install --cask android-studio
+brew install --cask google-cloud-sdk
+brew install --cask android-ndk
+brew install --cask unity-hub
+brew install --cask yt-music
 ## terminal
-brew cask install iterm2
+brew install --cask iterm2
 ## editor
-brew cask install 0xed                  # binary viewer
-brew cask install sublime-text
-brew cask install marp                  # markdown presentation slide
+brew install --cask 0xed                  # binary viewer
+brew install --cask sublime-text
+brew install --cask marp                  # markdown presentation slide
 ## ide
-brew cask install visual-studio
+brew install --cask visual-studio
 ## prototyping tool
-brew cask install origami-studio
+brew install --cask origami-studio
 ## decompiler
-brew cask install jd-gui
-brew cask install jad
+brew install --cask jd-gui
+brew install --cask jad
 ## previewer
-brew cask install kindle
-brew cask install libreoffice
+brew install --cask kindle
+brew install --cask libreoffice
 ## browser
-brew cask install google-chrome
-brew cask install firefox
+brew install --cask google-chrome
+brew install --cask firefox
 ## graphic
-brew cask install blender
-brew cask install xquartz               # gimp use
-brew cask install gimp
-brew cask install inkscape
+brew install --cask blender
+brew install --cask xquartz               # gimp use
+brew install --cask gimp
+brew install --cask inkscape
 ## virtual environment
-brew cask install docker
-brew cask install genymotion
+brew install --cask docker
+brew install --cask genymotion
 ## network
-brew cask install wireshark
-brew cask install filezilla
+brew install --cask wireshark
+brew install --cask filezilla
 ## debug
-brew cask install postman
+brew install --cask postman
 ## markdown => pdf
-brew cask install wkhtmltopdf
+brew install --cask wkhtmltopdf
 ## meeting
-brew cask install zoom
+brew install --cask zoom
 
 # app store
 brew install mas
