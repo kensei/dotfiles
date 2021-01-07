@@ -50,7 +50,6 @@ brew install --cask google-chrome
 brew install --cask firefox
 ## graphic
 brew install --cask blender
-brew install --cask xquartz               # gimp use
 brew install --cask gimp
 brew install --cask inkscape
 ## virtual environment
