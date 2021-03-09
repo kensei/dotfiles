@@ -20,7 +20,6 @@ brew install --cask google-backup-and-sync
 brew install --cask keepassx
 brew install --cask pritunl
 brew install --cask skitch
-brew install --cask skype
 brew install --cask timemachineeditor
 brew install --cask the-unarchiver
 ## sdk
@@ -37,6 +36,7 @@ brew install --cask sublime-text
 brew install --cask marp                  # markdown presentation slide
 ## ide
 brew install --cask visual-studio
+brew install --cask visual-studio-code
 ## prototyping tool
 brew install --cask origami-studio
 ## decompiler
