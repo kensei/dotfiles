@@ -1,3 +1,4 @@
 {
-  "json.maxItemsComputed": 8000
+  "json.maxItemsComputed": 8000,
+  "terminal.integrated.scrollback": 10000
 }
