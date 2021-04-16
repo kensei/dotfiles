@@ -1,4 +1,14 @@
 {
+  "scm.diffDecorations": "none", // git diff editor decoration
   "json.maxItemsComputed": 8000,
-  "terminal.integrated.scrollback": 10000
+  "terminal.integrated.scrollback": 10000,
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.tabSize": 2
+  }
 }
