@@ -52,6 +52,7 @@ brew install --cask firefox
 brew install --cask blender
 brew install --cask gimp
 brew install --cask inkscape
+brew install --cask drawio
 ## virtual environment
 brew install --cask docker
 brew install --cask genymotion

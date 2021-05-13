@@ -10,5 +10,6 @@
   },
   "[json]": {
     "editor.tabSize": 2
-  }
+  },
+  "terminal.integrated.tabs.enabled": true
 }
