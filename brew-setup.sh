@@ -22,12 +22,12 @@ brew install --cask pritunl
 brew install --cask skitch
 brew install --cask timemachineeditor
 brew install --cask the-unarchiver
+brew install --cask wkhtmltopdf           # markdown => pdf
 ## sdk
 brew install --cask android-studio
 brew install --cask google-cloud-sdk
 brew install --cask android-ndk
 brew install --cask unity-hub
-brew install --cask yt-music
 ## terminal
 brew install --cask iterm2
 ## editor
@@ -61,8 +61,6 @@ brew install --cask wireshark
 brew install --cask filezilla
 ## debug
 brew install --cask postman
-## markdown => pdf
-brew install --cask wkhtmltopdf
 ## meeting
 brew install --cask zoom
 
@@ -119,7 +117,7 @@ brew install lua
 # brew install memcached                # move docker
 brew install mercurial
 brew install maven
-brew install mono
+#brew install mono                      # install with in visual studio
 # brew install mysql                    # move docker
 brew install mysql-client
 brew install netcat
