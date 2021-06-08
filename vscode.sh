@@ -1,5 +1,4 @@
 # !/bin/bash
-brew install --cask visual-studio-code
 
 # install vscode extensions
 code --install-extension ms-dotnettools.csharp
