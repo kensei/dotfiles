@@ -109,7 +109,7 @@ brew install gradle
 brew install graphviz
 brew install ideviceinstaller
 brew install ios-deploy
-brew install jenv
+#brew install jenv
 brew install jq
 brew install libxml2 libxslt libiconv
 brew install libimobiledevice
@@ -124,17 +124,17 @@ brew install netcat
 # brew install nginx                    # move docker
 brew install nkf
 brew install nmap
-brew install nodebrew
-(
-    nodebrew setup
-)
+#brew install nodebrew
+#(
+#    nodebrew setup
+#)
 brew install oath-toolkit
 brew install openssl
 brew link --force openssl
 brew install pandoc
-brew install pipenv
+#brew install pipenv
 brew install plantuml
-brew install pyenv
+#brew install pyenv
 brew install python
 brew install python3
 (
