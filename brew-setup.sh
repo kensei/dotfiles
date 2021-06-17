@@ -147,10 +147,11 @@ brew install rsync
 brew install screenutf8 --utf8
 brew install sqlite
 brew install swift-format
-brew install terraforming
+brew install terraformer    # gcp
+brew install terraforming   # aws
 brew install tfenv
 (
-    tfenv install 0.12.19
+    tfenv install 0.12.24
 )
 brew install tree
 brew install --HEAD usbmuxd
