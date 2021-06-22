@@ -55,7 +55,6 @@ brew install --cask inkscape
 brew install --cask drawio
 ## virtual environment
 brew install --cask docker
-brew install --cask genymotion
 ## network
 brew install --cask wireshark
 brew install --cask filezilla
