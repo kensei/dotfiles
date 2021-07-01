@@ -102,10 +102,12 @@ brew install gdb
 ) > ~/.gdbinit
 brew install c-kermit
 brew install direnv
+brew install dex2jar
 brew install git
 brew install go
 brew install gradle
 brew install graphviz
+brew install hyperkit
 brew install ideviceinstaller
 brew install ios-deploy
 #brew install jenv
@@ -116,6 +118,7 @@ brew install lua
 # brew install memcached                # move docker
 brew install mercurial
 brew install maven
+brew install minicube
 #brew install mono                      # install with in visual studio
 # brew install mysql                    # move docker
 brew install mysql-client
