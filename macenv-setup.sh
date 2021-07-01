@@ -20,6 +20,12 @@ mkdir -p $HOME/develop
 defaults write com.apple.finder NewWindowTarget -string "PfDe"
 defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/develop/"
 
+### show always scrollbar
+defaults write -g AppleShowScrollBars -string "Always"
+
+### folder first order
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
+
 ## dock
 
 ## Automatically hide or show the Dock
@@ -55,13 +61,20 @@ defaults write com.apple.dock wvous-br-modifier -int 0
 
 ### Enable `Tap to click`
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+### mission control gesture
+defaults write com.apple.dock showMissionControlGestureEnabled -bool true
+### tap to click
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+### track speed
+defaults write -g com.apple.mouse.scaling 8
 
 ## language
 
 ### os langueget to en
 defaults write -g AppleLanguages -array en ja
+### disable fix spell
+defaults write -g NSAutomaticSpellingCorrectionEnabled -bool falsespell
 
 ## screen saver
 
@@ -72,9 +85,21 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 ## todo keybord setup
 
+keyboard_id="$(ioreg -c AppleEmbeddedKeyboard -r | grep -Eiw "VendorID|ProductID" | awk '{ print $4 }' | paste -s -d'-\n' -)-0"
+defaults -currentHost write -g com.apple.keyboard.modifiermapping.${keyboard_id} -array-add "
+<dict>
+  <key>HIDKeyboardModifierMappingDst</key>\
+  <integer>30064771300</integer>\
+  <key>HIDKeyboardModifierMappingSrc</key>\
+  <integer>30064771129</integer>\
+</dict>
+"
 # cmd + space : input source
 # shift + cmd space : reverse input source
 # alt + space : spotlight
 # shift + alt + space : find with finder
 
+killall cfprefsd
 killall Finder
+killall Dock
+killall SystemUIServer
