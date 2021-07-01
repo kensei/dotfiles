@@ -70,4 +70,11 @@ defaults write -g AppleLanguages -array en ja
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
+## todo keybord setup
+
+# cmd + space : input source
+# shift + cmd space : reverse input source
+# alt + space : spotlight
+# shift + alt + space : find with finder
+
 killall Finder
