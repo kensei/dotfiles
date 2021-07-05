@@ -44,12 +44,6 @@ $ xcode-select --install
 $ ssh-keygen -t rsa
 ```
 
-## brew setup
-
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-```
-
 ## dotfiles setup
 
 ```

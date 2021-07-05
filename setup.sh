@@ -11,6 +11,8 @@ ln -s $HOME/dotfiles/.vim/ $HOME/.vim
 mkdir -p $HOME/develop/repos
 mkdir -p $HOME/develop/workspaces
 
+source macenv-setup.sh
+
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
