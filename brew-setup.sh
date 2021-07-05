@@ -5,7 +5,6 @@ sudo chmod -R g+w /usr/local
 
 # tap
 brew tap rcmdnk/homebrew-rcmdnkpac # screen
-brew tap homebrew/cask-versions
 
 ## tool
 brew install --cask amazon-music

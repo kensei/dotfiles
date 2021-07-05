@@ -34,7 +34,7 @@ defaults write com.apple.finder _FXSortFoldersFirst -bool true
 ## network
 
 ### firewall on
-defaults write /Library/Preferences/com.apple.alf globalstate -int 1
+sudo defaults write /Library/Preferences/com.apple.alf globalstate -int 1
 
 ## dock
 
@@ -84,7 +84,9 @@ defaults write -g com.apple.mouse.scaling 8
 ### os langueget to en
 defaults write -g AppleLanguages -array en ja
 ### disable fix spell
-defaults write -g NSAutomaticSpellingCorrectionEnabled -bool falsespell
+defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
+
+### todo stop live conversion
 
 ## screen saver
 
@@ -93,8 +95,15 @@ defaults write -g NSAutomaticSpellingCorrectionEnabled -bool falsespell
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-## todo keybord setup
+### todo keybord setup
+# cmd + space : input source
+# shift + cmd space : reverse input source
+# alt + space : spotlight
+# shift + alt + space : find with finder
 
+## keybord
+
+### caps to ctrl
 keyboard_id="$(ioreg -c AppleEmbeddedKeyboard -r | grep -Eiw "VendorID|ProductID" | awk '{ print $4 }' | paste -s -d'-\n' -)-0"
 defaults -currentHost write -g com.apple.keyboard.modifiermapping.${keyboard_id} -array-add "
 <dict>
@@ -104,10 +113,6 @@ defaults -currentHost write -g com.apple.keyboard.modifiermapping.${keyboard_id}
   <integer>30064771129</integer>\
 </dict>
 "
-# cmd + space : input source
-# shift + cmd space : reverse input source
-# alt + space : spotlight
-# shift + alt + space : find with finder
 
 killall cfprefsd
 killall Finder
