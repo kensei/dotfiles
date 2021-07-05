@@ -1,3 +1,5 @@
+# mac env
+
 ## finder
 
 ### don"t create .DS_Store network volume
@@ -23,8 +25,16 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/deve
 ### show always scrollbar
 defaults write -g AppleShowScrollBars -string "Always"
 
+### default view is listview
+defaults write com.apple.Finder FXPreferredViewStyle -string "Nlsv"
+
 ### folder first order
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
+
+## network
+
+### firewall on
+defaults write /Library/Preferences/com.apple.alf globalstate -int 1
 
 ## dock
 

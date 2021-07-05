@@ -1,5 +1,18 @@
 # setup
 
+## change language
+
+### open
+
+```
+$ open -a "System Preferences.app"
+```
+
+### setting
+
+* choose menu language & region
+* add prefrred languages to english
+
 ## change default shell to bash
 
 `chsh -s /bin/bash`
