@@ -27,7 +27,7 @@ $ open -a "Keychain Access.app"
 
 ### make cert
 
-* choose menu [create a certificate...]
+* choose menu [keychain access] -> [certificate assistantt] -> [create a certificate...]
 * create your certificate dialog
   * input name [gdb-cert]
   * select [code signing]
