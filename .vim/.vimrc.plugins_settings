@@ -237,6 +237,11 @@ let g:OmniSharp_timeout = 1
 let g:js_indent_typescript = 1
 
 "------------------------------------
-" plantuml
+" plantuml-syntax
 "------------------------------------
 let g:plantuml_executable_script = "~/bin/plantuml.sh"
+
+"------------------------------------
+" vim-terraform
+"------------------------------------
+let g:terraform_fmt_on_save = 1

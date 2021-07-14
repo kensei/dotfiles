@@ -10,6 +10,7 @@ augroup filetypedetect
   au BufRead,BufNewFile *.slim setfiletype ruby
   au BufRead,BufNewFile *.rake setfiletype ruby
   au BufRead,BufNewFile *.cap setfiletype ruby
+  au BufRead,BufNewFile *.tf setfiletype terraform
 augroup END
 
 autocmd FileType c          setlocal sw=4 sts=4 ts=4 et
@@ -38,3 +39,4 @@ autocmd FileType xml        setlocal sw=4 sts=4 ts=4 et
 autocmd FileType yaml       setlocal sw=2 sts=2 ts=2 et
 autocmd FileType zsh        setlocal sw=4 sts=4 ts=4 et
 autocmd FileType make       setlocal sw=4 sts=4 ts=4
+autocmd FileType terraform  setlocal sw=2 sts=2 ts=2 et
