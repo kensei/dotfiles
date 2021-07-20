@@ -110,6 +110,7 @@ brew install hyperkit
 brew install ideviceinstaller
 brew install ios-deploy
 #brew install jenv
+brew install jmeter
 brew install jq
 brew install libxml2 libxslt libiconv
 brew install libimobiledevice
