@@ -61,6 +61,7 @@ brew install --cask filezilla
 brew install --cask postman
 ## meeting
 brew install --cask zoom
+brew install --cask discord
 
 # app store
 brew install mas
