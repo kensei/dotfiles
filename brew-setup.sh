@@ -68,9 +68,8 @@ brew install --cask discord
 brew install mas
 mas account | grep "Not signed in"
 if [ $? -eq 0 ]; then
-  echo -n "input apple id ?> "
-  read INPUT
-  mas signin --dialog $INPUT
+  echo -n "require sign in appl store"
+  exit 1
 fi
 mas install 497799835 # Xcode
 (
