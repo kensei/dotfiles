@@ -162,7 +162,7 @@ brew install --HEAD usbmuxd
 (
     brew link usbmuxd
 )
-brew install vim --with-python3
+brew install vim
 brew install w3m
 brew install wget
 
