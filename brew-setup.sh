@@ -19,7 +19,6 @@ brew install --cask evernote
 brew install --cask google-backup-and-sync
 brew install --cask keepassx
 brew install --cask pritunl
-brew install --cask skitch
 brew install --cask timemachineeditor
 brew install --cask the-unarchiver
 brew install --cask wkhtmltopdf           # markdown => pdf
@@ -38,21 +37,24 @@ brew install --cask marp                  # markdown presentation slide
 brew install --cask visual-studio
 brew install --cask visual-studio-code
 ## prototyping tool
+brew intalll --cask figma
 brew install --cask origami-studio
 ## decompiler
 brew install --cask jd-gui
 brew install --cask jad
 ## previewer
 brew install --cask kindle
+# offece document
 brew install --cask libreoffice
 ## browser
 brew install --cask google-chrome
 brew install --cask firefox
 ## graphic
 brew install --cask blender
+brew install --cask drawio
 brew install --cask gimp
 brew install --cask inkscape
-brew install --cask drawio
+brew install --cask skitch
 ## virtual environment
 brew install --cask docker
 ## network
