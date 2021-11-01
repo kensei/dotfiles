@@ -18,6 +18,7 @@ brew install --cask dropbox
 brew install --cask evernote
 brew install --cask google-backup-and-sync
 brew install --cask keepassx
+brew install --cask openvpn-connect
 brew install --cask pritunl
 brew install --cask timemachineeditor
 brew install --cask the-unarchiver
