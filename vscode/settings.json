@@ -12,5 +12,6 @@
     "editor.tabSize": 2
   },
   "terminal.integrated.tabs.enabled": true,
-  "extensions.ignoreRecommendations": true
+  "extensions.ignoreRecommendations": true,
+  "diffEditor.renderSideBySide": false
 }

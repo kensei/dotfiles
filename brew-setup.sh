@@ -11,7 +11,6 @@ brew tap homebrew/cask-versions
 brew install --cask amazon-music
 brew install --cask appcleaner
 brew install --cask bartender
-brew install --cask bettertouchtool
 brew install --cask caffeine
 brew install --cask clipy
 brew install --cask dropbox
@@ -19,7 +18,6 @@ brew install --cask evernote
 brew install --cask google-backup-and-sync
 brew install --cask keepassx
 brew install --cask openvpn-connect
-brew install --cask pritunl
 brew install --cask timemachineeditor
 brew install --cask the-unarchiver
 brew install --cask wkhtmltopdf           # markdown => pdf
@@ -107,6 +105,7 @@ brew install c-kermit
 brew install direnv
 brew install dex2jar
 brew install git
+brew install git-lfs
 brew install go
 brew install gradle
 brew install graphviz
