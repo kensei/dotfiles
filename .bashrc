@@ -68,7 +68,7 @@ function clear_docker_log() {
     screen -S ${screen_name} -X quit
 }
 
-export DIRENV_PATH=/usr/local/bin/direnv
+export DIRENV_PATH=$(brew --prefix)/bin/direnv
 if [ -f "${DIRENV_PATH}" ]; then
     eval "$(direnv hook bash)"
 fi

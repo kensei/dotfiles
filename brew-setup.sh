@@ -1,11 +1,17 @@
 #!/bin/bash
 
-sudo chown -R $(whoami):admin /usr/local
-sudo chmod -R g+w /usr/local
+export HOMEBREW_PREFIX="/opt/homebrew";
+export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
+export HOMEBREW_REPOSITORY="/opt/homebrew";
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin${PATH+:$PATH}";
+export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
+export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
+
+sudo chown -R $(whoami):admin /opt/homebrew
+sudo chmod -R g+w /opt/homebrew
 
 # tap
 brew tap rcmdnk/homebrew-rcmdnkpac # screen
-brew tap homebrew/cask-versions
 
 ## tool
 brew install --cask amazon-music
