@@ -42,7 +42,7 @@ brew install --cask marp                  # markdown presentation slide
 brew install --cask visual-studio
 brew install --cask visual-studio-code
 ## prototyping tool
-brew intalll --cask figma
+brew install --cask figma
 brew install --cask origami-studio
 ## decompiler
 brew install --cask jd-gui
