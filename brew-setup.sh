@@ -70,6 +70,8 @@ brew install --cask postman
 ## meeting
 brew install --cask zoom
 brew install --cask discord
+## driver
+brew install --cask homebrew/cask-drivers/logi-options-plus
 
 # app store
 brew install mas
