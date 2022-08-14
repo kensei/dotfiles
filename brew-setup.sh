@@ -121,7 +121,7 @@ brew install git-lfs
 brew install go
 brew install gradle
 brew install graphviz
-#brew install grep # gnu grep
+brew install grep # gnu grep (requirement tfenv
 #brew install gzip # gnu gzip
 brew install hyperkit
 brew install ideviceinstaller
