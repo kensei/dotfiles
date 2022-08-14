@@ -96,25 +96,33 @@ brew install autoconf
 brew install automake
 brew install awscli
 brew install bash-completion
-brew install binutils
+brew install binutils # gnu binary utils
 brew install ctags
 brew install cocoapods
 (
     pod setup
 )
-brew install coreutils
+brew install coreutils # gnu shell utils
+brew install c-kermit
+brew install direnv
+#brew install diffutils # gnu diff utils
+brew install dex2jar
+#brew install findutils # gnu find utils
+#brew install gawk # gnu awk
 brew install gdb
 (
   echo "set startup-with-shell off"
 ) > ~/.gdbinit
-brew install c-kermit
-brew install direnv
-brew install dex2jar
 brew install git
 brew install git-lfs
+#brew install gnu-sed # gnu sed
+#brew install gnu-tar # gnu tar
+#brew install gnutls # gnu tls utils
 brew install go
 brew install gradle
 brew install graphviz
+#brew install grep # gnu grep
+#brew install gzip # gnu gzip
 brew install hyperkit
 brew install ideviceinstaller
 brew install ios-deploy
