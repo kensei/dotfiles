@@ -41,6 +41,8 @@ $ open -a "Keychain Access.app"
 
 ```
 $ xcode-select --install
+$ sudo xcodebuild -license accept
+$ xcodebuild -runFirstLaunch
 $ ssh-keygen -t rsa
 ```
 

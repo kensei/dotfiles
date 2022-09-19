@@ -78,10 +78,6 @@ if [ $? -eq 0 ]; then
   echo -n "require sign in appl store"
   exit 1
 fi
-mas install 497799835 # Xcode
-(
-    sudo xcodebuild -license accept
-)
 mas install 451444120  # Memory Clean
 mas install 539883307  # LINE
 mas install 425424353  # The Unarchiver
