@@ -22,4 +22,7 @@ eval “$(/opt/homebrew/bin/brew shellenv)”
 source brew-setup.sh
 source vscode.sh
 
+cuol -L https://desktop.docker.com/mac/main/arm64/Docker.dmg -o $HOME/Downloads/Docker.dmg
+open $HOME/Downloads/Docker.dmg
+
 curl -L https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/android4me/AXMLPrinter2.jar -o $HOME/Library/android/sdk/tools/AXMLPrinter2.jar

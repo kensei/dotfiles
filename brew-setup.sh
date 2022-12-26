@@ -61,7 +61,7 @@ brew install --cask gimp
 brew install --cask inkscape
 brew install --cask skitch
 ## virtual environment
-brew install --cask docker
+#brew install --cask docker
 ## network
 brew install --cask wireshark
 brew install --cask filezilla
