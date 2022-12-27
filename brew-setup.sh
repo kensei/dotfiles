@@ -73,11 +73,6 @@ brew install --cask discord
 
 # app store
 brew install mas
-mas account | grep "Not signed in"
-if [ $? -eq 0 ]; then
-  echo -n "require sign in appl store"
-  exit 1
-fi
 mas install 451444120  # Memory Clean
 mas install 539883307  # LINE
 mas install 425424353  # The Unarchiver
@@ -131,7 +126,7 @@ brew install lua
 # brew install memcached                # move docker
 brew install mercurial
 brew install maven
-brew install minicube
+brew install minikube
 #brew install mono                      # install with in visual studio
 # brew install mysql                    # move docker
 brew install mysql-client

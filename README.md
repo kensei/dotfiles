@@ -41,8 +41,6 @@ $ open -a "Keychain Access.app"
 
 ```
 $ xcode-select --install
-$ sudo xcodebuild -license accept
-$ xcodebuild -runFirstLaunch
 $ ssh-keygen -t rsa
 ```
 
@@ -52,6 +50,11 @@ $ ssh-keygen -t rsa
 $ git clone https://github.com/kensei/dotfiles.git
 $ cd dotfiles
 $ ./setup.sh
+```
+
+```
+$ sudo xcodebuild -license accept
+$ xcodebuild -runFirstLaunch
 ```
 
 ## vim setup
