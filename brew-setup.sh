@@ -73,6 +73,7 @@ brew install --cask discord
 
 # app store
 brew install mas
+mas install 497799835  # XCode
 mas install 451444120  # Memory Clean
 mas install 539883307  # LINE
 mas install 425424353  # The Unarchiver
