@@ -158,8 +158,6 @@ brew install rsync
 brew install screenutf8 --utf8
 brew install sqlite
 brew install swift-format
-brew install terraformer    # gcp
-brew install terraforming   # aws
 brew install tfenv
 (
     tfenv install 0.12.24
