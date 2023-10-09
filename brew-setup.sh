@@ -29,6 +29,7 @@ brew install --cask the-unarchiver
 brew install --cask wkhtmltopdf           # markdown => pdf
 ## sdk
 brew install --cask android-studio
+brew install --cask devcontainers
 brew install --cask google-cloud-sdk
 brew install --cask android-ndk
 brew install --cask unity-hub
