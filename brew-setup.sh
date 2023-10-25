@@ -154,6 +154,7 @@ brew install python3
 (
     pip3 install --upgrade pip setuptools wheel
 )
+brew install qemu
 brew install readline
 brew install redis
 #brew install --HEAD -f screen
