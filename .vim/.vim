@@ -1,1 +1,0 @@
-/Users/k-kitahara/dotfiles/.vim/

@@ -18,7 +18,7 @@ Session.vim
 .zshrc.local
 samples
 
-.vim/bundle/
+.vim/plugged/
 .vim/ref/
 .netrwhist
 bin/

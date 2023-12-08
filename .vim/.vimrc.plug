@@ -1,0 +1,88 @@
+filetype off
+
+call plug#begin('~/.vim/plugged')
+
+" Edit {{{
+  " NERD_commenter.vim :最強コメント処理 (<Leader>c<w>でコメントをトグル)
+  Plug 'scrooloose/nerdcommenter'
+
+  " visually indent guide
+  Plug 'nathanaelkane/vim-indent-guides'
+" }}}
+
+" Completion {{{
+  Plug 'prabirshrestha/asyncomplete.vim'
+  Plug 'prabirshrestha/asyncomplete-lsp.vim'
+" }}}
+
+" Searching/Moving{{{
+  " grep.vim : 外部のgrep利用。:Grepで対話形式でgrep :Rgrepは再帰
+  Plug 'vim-scripts/grep.vim'
+" }}}
+
+" Programming {{{
+  " quickrun.vim : 編集中のファイルを簡単に実行できるプラグイン
+  Plug 'thinca/vim-quickrun'
+
+  " perldocやphpmanual等のリファレンスをvim上で見る
+  Plug 'thinca/vim-ref'
+  Plug 'yuku-t/vim-ref-ri'
+
+  " SQLUtilities : SQL整形、生成ユーティリティ
+  "Plug 'SQLUtilities'
+
+  " ソースコード上のメソッド宣言、変数宣言の一覧を表示
+  Plug 'vim-scripts/taglist.vim'
+" }}}
+
+" Syntax {{{
+  " async lint
+  Plug 'dense-analysis/ale'
+" }}}
+
+" Buffer {{{
+  " minibufexpl.vim : タブエディタ風にバッファ管理ウィンドウを表示
+  Plug 'vim-scripts/minibufexpl.vim'
+
+  " NERDTree : ツリー型エクスプローラ
+  Plug 'preservim/nerdtree'
+" }}}
+
+" Encording {{{
+  " FileEncording
+  Plug 'banyan/recognize_charcode.vim'
+" }}}
+
+" Utility {{{
+  " vimshell : vimのshell
+  Plug 'Shougo/vimshell'
+
+  " vimproc : vimから非同期実行。vimshelleで必要
+  Plug 'Shougo/vimproc.vim', { 'dir': '~/.vim/plugged/vimproc.vim', 'do': 'make' }
+
+  " vimからGit操作する
+  Plug 'tpope/vim-fugitive'
+
+  " font-size変更
+  Plug 'thinca/vim-fontzoom'
+
+  " バッファを閉じる
+  Plug 'rbgrouleff/bclose.vim'
+" }}}
+
+" ColorSchema{{{
+  " Thema
+  Plug 'vim-scripts/desert256.vim'
+  Plug 'vim-scripts/mrkn256.vim'
+  Plug 'vim-scripts/wombat256.vim'
+  Plug 'yuroyoro/yuroyoro256.vim'
+" }}}
+
+" LSP{{{
+  Plug 'prabirshrestha/vim-lsp'
+  "Plug 'rhysd/vim-lsp-ale'
+  Plug 'mattn/vim-lsp-settings'
+  Plug 'mattn/vim-lsp-icons'
+" }}}
+
+call plug#end()

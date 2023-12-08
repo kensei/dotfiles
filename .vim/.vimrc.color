@@ -111,3 +111,4 @@ function! RGB2ESC( rgb )
     endfor
     return index
 endfunction
+
