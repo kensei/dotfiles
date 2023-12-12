@@ -1,0 +1,3 @@
+if exists("$DEV_CONTAINER_JSON_PATH")
+  let g:loaded_lsp_settings= 1
+endif

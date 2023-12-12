@@ -1,3 +1,19 @@
-let g:asyncomplete_auto_popup = 1
+" 補完候補を表示
+set wildmenu
+
+" コマンド補完を開始するキー
+set wildchar=<tab>
+
+" リスト表示，最長マッチ
+set wildmode=list:full
+
+" 補完表示時のEnterで改行をしない
+inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
+" 補完表示時の選択で挿入をしない
+inoremap <expr><C-n> pumvisible() ? "<Down>" : "<C-n>"
+inoremap <expr><C-p> pumvisible() ? "<Up>" : "<C-p>"
+
+" 自動補完はしない
+let g:asyncomplete_auto_popup = 0
 let g:asyncomplete_auto_completeopt = 0
 let g:asyncomplete_popup_delay = 200

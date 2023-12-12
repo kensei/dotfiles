@@ -13,6 +13,7 @@ call plug#begin('~/.vim/plugged')
 " Completion {{{
   Plug 'prabirshrestha/asyncomplete.vim'
   Plug 'prabirshrestha/asyncomplete-lsp.vim'
+  Plug 'prabirshrestha/asyncomplete-file.vim'
 " }}}
 
 " Searching/Moving{{{
@@ -80,9 +81,9 @@ call plug#begin('~/.vim/plugged')
 
 " LSP{{{
   Plug 'prabirshrestha/vim-lsp'
-  "Plug 'rhysd/vim-lsp-ale'
-  Plug 'mattn/vim-lsp-settings'
+  Plug 'rhysd/vim-lsp-ale'
   Plug 'mattn/vim-lsp-icons'
+  Plug 'mattn/vim-lsp-settings'
 " }}}
 
 call plug#end()

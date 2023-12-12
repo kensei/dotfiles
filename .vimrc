@@ -1,6 +1,9 @@
 "基本設定
 source ~/.vim/.vimrc.basic
 
+" devcontainer
+source ~/.vim/.vimrc.devcontainer
+
 "vim-plugで管理してるpluginを読み込む
 source ~/.vim/.vimrc.plug
 
