@@ -15,5 +15,6 @@
   "extensions.ignoreRecommendations": true,
   "diffEditor.renderSideBySide": false,
   "editor.minimap.enabled": false,
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "remote.autoForwardPortsSource": "hybrid"
 }

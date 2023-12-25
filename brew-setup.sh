@@ -72,6 +72,8 @@ brew install --cask postman
 ## meeting
 brew install --cask zoom
 brew install --cask discord
+## player
+brew install --cask vlc
 
 # app store
 brew install mas
