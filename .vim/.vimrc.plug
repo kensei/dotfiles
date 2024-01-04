@@ -37,6 +37,8 @@ call plug#begin('~/.vim/plugged')
 " }}}
 
 " Syntax {{{
+  " syntax highlight
+  Plug 'sheerun/vim-polyglot'
   " async lint
   Plug 'dense-analysis/ale'
 " }}}
