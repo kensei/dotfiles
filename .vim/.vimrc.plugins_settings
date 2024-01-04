@@ -122,14 +122,6 @@ nnoremap <Leader>dj :<C-u>Ref webdict ej<Space>
 nnoremap <Leader>dw :<C-u>Ref webdict wiki<Space>
 
 "------------------------------------
-" vim-go
-"------------------------------------
-let g:go_bin_path = expand($GOPATH."/bin")
-let g:go_fmt_fail_silently = 1
-let g:go_fmt_autosave = 0
-let g:go_disable_autoinstall = 1
-
-"------------------------------------
 " quickrun
 "------------------------------------
 let g:quickrun_config={}
@@ -159,4 +151,3 @@ let g:quickrun_config["opengl"] = {
 " <C-c> で実行を強制終了させる
 " quickrun.vim が実行していない場合には <C-c> を呼び出す
 nnoremap <expr><silent> <C-c> quickrun#is_running() ? quickrun#sweep_sessions() : "\<C-c>"
-
