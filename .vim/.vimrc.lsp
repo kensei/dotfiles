@@ -15,6 +15,7 @@ command! LspDebug let lsp_log_verbose=1 | let lsp_log_file = expand('~/lsp.log')
 let g:lsp_diagnostics_enabled = 1
 let g:lsp_diagnostics_echo_cursor = 1
 let g:lsp_text_edit_enabled = 1
+let g:lsp_settings_enable_suggestions = 0
 
 "" 環境変数でdevcontainerにリモートlspの設定が定義されている場合
 if exists("$DEV_CONTAINER_JSON_PATH") && executable("devcontainer")

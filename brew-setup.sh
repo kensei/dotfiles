@@ -74,6 +74,10 @@ brew install --cask zoom
 brew install --cask discord
 ## player
 brew install --cask vlc
+## music
+brew install --cask youtube-dl
+## game
+brew install --cask steam
 
 # app store
 brew install mas
@@ -104,6 +108,7 @@ brew install c-kermit
 brew install direnv
 #brew install diffutils # gnu diff utils
 brew install dex2jar
+brew install ffmpeg
 #brew install findutils # gnu find utils
 #brew install gawk # gnu awk
 brew install gdb
