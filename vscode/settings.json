@@ -16,5 +16,6 @@
   "diffEditor.renderSideBySide": false,
   "editor.minimap.enabled": false,
   "workbench.startupEditor": "none",
-  "remote.autoForwardPortsSource": "hybrid"
+  "remote.autoForwardPortsSource": "hybrid",
+  "git.openRepositoryInParentFolders": "always"
 }

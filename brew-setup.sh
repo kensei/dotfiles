@@ -125,6 +125,7 @@ brew install gradle
 brew install graphviz
 brew install grep # gnu grep (requirement tfenv
 #brew install gzip # gnu gzip
+brew install helm
 brew install hyperkit
 brew install ideviceinstaller
 brew install ios-deploy
