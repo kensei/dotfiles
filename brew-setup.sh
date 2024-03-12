@@ -93,6 +93,7 @@ mas install 784801555  # Microsoft OneNote
 # homebrew
 brew install ansible
 brew install ant
+brew install asdf
 brew install autoconf
 brew install automake
 brew install awscli
@@ -126,6 +127,7 @@ brew install graphviz
 brew install grep # gnu grep (requirement tfenv
 #brew install gzip # gnu gzip
 brew install helm
+brew install hugo
 brew install hyperkit
 brew install ideviceinstaller
 brew install ios-deploy
