@@ -71,6 +71,9 @@ call plug#begin('~/.vim/plugged')
 
   " バッファを閉じる
   Plug 'rbgrouleff/bclose.vim'
+
+  " flutter
+  Plug 'thosakwe/vim-flutter'
 " }}}
 
 " ColorSchema{{{
