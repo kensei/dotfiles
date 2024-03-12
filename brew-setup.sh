@@ -100,6 +100,7 @@ brew install asdf
   asdf install flutter $(asdf latest flutter)
   asdf list flutter
   asdf global flutter $(asdf latest flutter)
+  flutter doctor
 )
 brew install autoconf
 brew install automake

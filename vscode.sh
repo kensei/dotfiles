@@ -9,6 +9,7 @@ code --install-extension jebbs.plantuml
 code --install-extension ms-vscode-remote.remote-containers
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension esbenp.prettier-vscode
+code --install-extension dart-code.flutter
 
 CURRENT_DIR=`pwd`
 ln -s $CURRENT_DIR/vscode/launch.json ~/Library/Application\ Support/Code/User/launch.json
