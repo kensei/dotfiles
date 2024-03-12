@@ -94,6 +94,13 @@ mas install 784801555  # Microsoft OneNote
 brew install ansible
 brew install ant
 brew install asdf
+(
+  asdf plugin add flutter
+  asdf list all flutter
+  asdf install flutter $(asdf latest flutter)
+  asdf list flutter
+  asdf global flutter $(asdf latest flutter)
+)
 brew install autoconf
 brew install automake
 brew install awscli
@@ -102,7 +109,7 @@ brew install binutils # gnu binary utils
 brew install ctags
 brew install cocoapods
 (
-    pod setup
+  pod setup
 )
 brew install coreutils # gnu shell utils
 brew install c-kermit
@@ -162,7 +169,7 @@ brew install plantuml
 brew install python
 brew install python3
 (
-    pip3 install --upgrade pip setuptools wheel
+  pip3 install --upgrade pip setuptools wheel
 )
 brew install qemu
 brew install readline
@@ -174,12 +181,12 @@ brew install sqlite
 brew install swift-format
 brew install tfenv
 (
-    tfenv install 0.12.24
+  tfenv install 1.7.4
 )
 brew install tree
 brew install --HEAD usbmuxd
 (
-    brew link usbmuxd
+  brew link usbmuxd
 )
 brew install vim
 brew install w3m
