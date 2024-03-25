@@ -180,6 +180,7 @@ brew install rsync
 brew install screenutf8 --utf8
 brew install sqlite
 brew install swift-format
+brew install telnet
 brew install tfenv
 (
   tfenv install 1.7.4

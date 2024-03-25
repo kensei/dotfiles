@@ -29,6 +29,7 @@ if exists("$DEV_CONTAINER_JSON_PATH") && executable("devcontainer")
         \ 'tcp': { server_info-> "localhost:" . s:item['port'] },
         \ 'allowlist': [s:item['file-type']],
         \ })
+      au FileType s:item['file-type'] setlocal omnifunc=lsp#complete
     endif
   endfor
 endif
