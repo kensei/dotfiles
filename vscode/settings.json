@@ -17,5 +17,14 @@
   "editor.minimap.enabled": false,
   "workbench.startupEditor": "none",
   "remote.autoForwardPortsSource": "hybrid",
-  "git.openRepositoryInParentFolders": "always"
+  "git.openRepositoryInParentFolders": "always",
+  "editor.codeLens": false,
+  "editor.referenceInfos": false,
+  "go.toolsManagement.autoUpdate": true,
+  "deepl.formality": "default",
+  "deepl.tagHandling": "off",
+  "deepl.splitSentences": "1",
+  "deepl.translationMode": "Replace",
+  "deepl.defaultSourceLanguage": "EN-US",
+  "deepl.defaultTargetLanguage": "JA"
 }

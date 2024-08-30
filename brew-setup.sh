@@ -22,7 +22,7 @@ brew install --cask clipy
 brew install --cask dropbox
 brew install --cask evernote
 brew install --cask google-drive
-brew install --cask keepassx
+brew install --cask keepassxc
 brew install --cask openvpn-connect
 brew install --cask timemachineeditor
 brew install --cask the-unarchiver
@@ -54,8 +54,9 @@ brew install --cask kindle
 # offece document
 brew install --cask libreoffice
 ## browser
-brew install --cask google-chrome
 brew install --cask firefox
+brew install --cask google-chrome
+brew install --cask tor-browser
 ## graphic
 brew install --cask blender
 brew install --cask drawio
