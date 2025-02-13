@@ -1,5 +1,8 @@
 # mac env
 
+## suspend mac startup sound
+sudo nvram StartupMute=%01
+
 ## finder
 
 ### don"t create .DS_Store network volume

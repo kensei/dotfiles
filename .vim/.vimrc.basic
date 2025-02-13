@@ -3,16 +3,8 @@ scriptencoding utf-8
 
 " 改行コードの自動認識
 set fileformats=unix,dos,mac
-" バックスペースキーで削除できるものを指定
-"  indent  : 行頭の空白
-"  eol     : 改行
-"  start   : 挿入モード開始位置より手前の文字
-set backspace=indent,eol,start
 " 他で書き換えられたら自動で読み直す
 set autoread
-" バックアップファイル作らない
-set nowritebackup
-set nobackup
 " スワップファイル作らない
 set noswapfile
 " undoファイル作らない
@@ -21,13 +13,6 @@ set noundofile
 set switchbuf=useopen
 " ベル鳴らさない
 set visualbell t_vb=
-
-"----------------------------------------
-"メッセージの日本語化
-"----------------------------------------
-if has('unix')&&has('gui_running')
-  let $LANG='ja'
-endif
 
 "----------------------------------------
 " display
@@ -152,6 +137,7 @@ filetype plugin on
 " utf-8で保存
 set fileencoding=utf-8
 " バックアップ取らない
+set nowritebackup
 set nobackup
 
 "----------------------------------------
@@ -173,4 +159,3 @@ nnoremap <C-]> g<C-]>zz
 " Ctrl + Spaceを強制上書き
 autocmd VimEnter * imap <Nul> <C-Space>
 imap <C-Space> <C-x><C-o>
-

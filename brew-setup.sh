@@ -26,7 +26,7 @@ brew install --cask keepassxc
 brew install --cask openvpn-connect
 brew install --cask timemachineeditor
 brew install --cask the-unarchiver
-brew install --cask wkhtmltopdf           # markdown => pdf
+#brew install --cask wkhtmltopdf           # markdown => pdf (repository archived)
 ## sdk
 brew install --cask android-studio
 brew install --cask devcontainers
@@ -36,9 +36,10 @@ brew install --cask unity-hub
 ## terminal
 brew install --cask iterm2
 ## editor
-brew install --cask 0xed                  # binary viewer
+#brew install --cask 0xed                  # binary viewer (mac binary archived)
 brew install --cask sublime-text
 brew install --cask marp                  # markdown presentation slide
+brew install --cask hex-fiend
 ## ide
 brew install --cask visual-studio
 brew install --cask visual-studio-code
@@ -69,6 +70,7 @@ brew install --cask skitch
 brew install --cask wireshark
 brew install --cask filezilla
 ## debug
+brew install --cask burp-suite
 brew install --cask postman
 ## meeting
 brew install --cask zoom
@@ -94,15 +96,6 @@ mas install 784801555  # Microsoft OneNote
 # homebrew
 brew install ansible
 brew install ant
-brew install asdf
-(
-  asdf plugin add flutter
-  asdf list all flutter
-  asdf install flutter $(asdf latest flutter)
-  asdf list flutter
-  asdf global flutter $(asdf latest flutter)
-  flutter doctor
-)
 brew install autoconf
 brew install automake
 brew install awscli
@@ -131,6 +124,7 @@ brew install git-lfs
 #brew install gnu-tar # gnu tar
 #brew install gnutls # gnu tls utils
 brew install go
+brew install gpg pinentry-mac
 brew install gradle
 brew install graphviz
 brew install grep # gnu grep (requirement tfenv
@@ -150,6 +144,20 @@ brew install lua
 brew install mercurial
 brew install maven
 brew install minikube
+brew install mise
+(
+  mise plugin add flutter
+  mise plugins ls-remote flutter
+  mise install flutter $(mise latest flutter)
+  mise list flutter
+  mise global flutter $(mise latest flutter)
+  flutter doctor
+  mise plugin add terraform
+  mise plugins ls-remote terraform
+  mise install terraform $(mise latest terraform)
+  mise list terraform
+  mise global terraform $(mise latest terraform)
+)
 #brew install mono                      # install with in visual studio
 # brew install mysql                    # move docker
 brew install mysql-client
@@ -167,6 +175,7 @@ brew link --force openssl
 brew install pandoc
 #brew install pipenv
 brew install plantuml
+brew install poppler                    # pdf tools
 #brew install pyenv
 brew install python
 brew install python3
@@ -182,10 +191,6 @@ brew install screenutf8 --utf8
 brew install sqlite
 brew install swift-format
 brew install telnet
-brew install tfenv
-(
-  tfenv install 1.7.4
-)
 brew install tree
 brew install --HEAD usbmuxd
 (
