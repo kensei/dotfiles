@@ -18,6 +18,10 @@ brew install --cask amazon-music
 brew install --cask appcleaner
 brew install --cask bartender
 brew install --cask caffeine
+brew install --cask calibre
+(
+  curl -L https://github.com/apprenticeharper/DeDRM_tools/releases/download/v7.2.1/DeDRM_tools_7.2.1.zip -o $HOME/Downloads
+)
 brew install --cask clipy
 brew install --cask dropbox
 brew install --cask evernote
