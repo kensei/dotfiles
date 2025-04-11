@@ -11,7 +11,6 @@ code --install-extension dbaeumer.vscode-eslint
 code --install-extension esbenp.prettier-vscode
 code --install-extension dart-code.flutter
 code --install-extension visualstudiotoolsforunity.vstuc
-code --install-extension unity.unity-debug
 code --install-extension mermaidchart.vscode-mermaid-chart
 code --install-extension hashicorp.terraform
 code --install-extension k--kato.docomment
