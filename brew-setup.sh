@@ -12,6 +12,7 @@ sudo chmod -R g+w /opt/homebrew
 
 # tap
 brew tap rcmdnk/homebrew-rcmdnkpac # screen
+brew tap isen-ng/dotnet-sdk-versions # dotnet
 
 ## tool
 brew install --cask amazon-music
@@ -34,6 +35,10 @@ brew install --cask the-unarchiver
 ## sdk
 brew install --cask android-studio
 brew install --cask devcontainers
+brew install --cask dotnet-sdk5
+(
+  dotnet --list-sdks
+)
 brew install --cask google-cloud-sdk
 brew install --cask android-ndk
 brew install --cask unity-hub

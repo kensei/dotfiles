@@ -26,5 +26,6 @@
   "deepl.splitSentences": "1",
   "deepl.translationMode": "Replace",
   "deepl.defaultSourceLanguage": "EN-US",
-  "deepl.defaultTargetLanguage": "JA"
+  "deepl.defaultTargetLanguage": "JA",
+  "dotnet.server.useOmnisharp": false
 }
