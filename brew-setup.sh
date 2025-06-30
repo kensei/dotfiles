@@ -34,7 +34,7 @@ brew install --cask the-unarchiver
 #brew install --cask wkhtmltopdf           # markdown => pdf (repository archived)
 ## sdk
 brew install --cask android-studio
-brew install --cask devcontainers
+brew install --cask devcontainers         # depend node
 brew install --cask dotnet-sdk5
 (
   ln -s $HOMEBREW_PREFIX/bin/dotnetx64 $HOMEBREW_PREFIX/bin/dotnet
