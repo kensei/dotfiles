@@ -12,7 +12,7 @@ autodetach on
 startup_message off
 
 # スクロールバックバッファ
-defscrollback 10000
+defscrollback 20000
 
 # モニター機能
 defmonitor on
@@ -34,7 +34,8 @@ hardstatus on
 #  %07=       - left 7 padding for window number and flags
 #  %t         - title of current window
 #  %=         - truncation/padding point
-caption always '%?%F%{= wB}%:%{=b wk}%?%2n%f%07=%t%='
+#caption always '%?%F%{= wB}%:%{=b wk}%?%2n%f%07=%t%='
+caption always '%?%F%{= 4;7}%:%{=b 0;7}%? %2n%f %07= %t %='
 
 # hardstatus string description:
 #
@@ -59,8 +60,8 @@ caption always '%?%F%{= wB}%:%{=b wk}%?%2n%f%07=%t%='
 #  %=         - truncation/paddion point.
 # %{= .b}     - blue on default background.
 #  %l         - host load average.
-#hardstatus alwayslastline '%m/%d %02c:%s %{= .W}%H%{-} %L=%-w%45L>%{=u W.}%n %t%{-}%+w %-17<%=%{= .b}(%l)'
-hardstatus alwayslastline '%{= kw}%02c:%s %{= .y}%H %L=%{= .b}%-w%46>%{= .r}%n %t*%{= .b}%+w%-16=%{= .y}[%l]'
+#hardstatus alwayslastline '%{= kw}%02c:%s %{= .y}%H %L=%{= .b}%-w%46>%{= .r}%n %t*%{= .b}%+w%-16=%{= .y}[%l]'
+hardstatus alwayslastline '%{= 7;0} %02c:%s %{= 3} %H %L=%{= 4}%-w%46>%{= 1} %n %t* %{= 4}%+w%-16=%{= 3} [%l] '
 
 # その他のメッセージ
 sorendition "+rb .G"
@@ -74,6 +75,9 @@ escape ^Zz
 # 背景色消去
 defbce "on"
 
+# フルカラー
+truecolor on
+
 # ボールドのテキストを表示するとき、色を明るい青に変更する。
 #attrcolor b "^["
 
@@ -86,12 +90,6 @@ defbce "on"
 
 # 256色表示設定
 term xterm-256color
-termcapinfo xterm* 'Co#256:pa#32767:AB=\E[48;5;%dm:AF=\E[38;5;%dm:'
-termcapinfo kterm* 'Co#256:pa#32767:AB=\E[48;5;%dm:AF=\E[38;5;%dm:'
-
-# escape codes to avoid resize window at starting screen
-termcapinfo xterm* 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
-termcapinfo kterm* 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
 
 # 別画面サポート。Vimやless使うときに便利
 altscreen on
@@ -110,24 +108,3 @@ msgwait 5
 
 # 次のメッセージを表示するまでの遅延時間(秒単位)
 msgminwait 1
-
-# この下の一行を入れないと、Macのターミナルでウインドウスクロールが出来ない
-termcapinfo xterm* ti@:te@
-
-# ウィンドウ操作モード
-#bind j eval 'echo "Operate window"' 'command -c operate'
-#bind -c operate ^]  command
-#bind -c operate j eval 'focus down' 'command -c operate'
-#bind -c operate k eval 'focus up' 'command -c operate'
-#bind -c operate t eval 'focus top' 'command -c operate'
-#bind -c operate b eval 'focus bottom' 'command -c operate'
-#bind -c operate + eval 'resize +1' 'command -c operate'
-#bind -c operate - eval 'resize -1' 'command -c operate'
-#bind -c operate s eval 'split' 'command -c operate'
-#bind -c operate c eval 'screen' 'command -c operate'
-#bind -c operate x eval 'remove' 'command -c operate'
-# 垂直分割する。（縦分割対応版screenをインストールする必要あり)
-#bind -c operate v eval 'split -v' 'command -c operate'
-
-#process kill log
-# zombie ^[

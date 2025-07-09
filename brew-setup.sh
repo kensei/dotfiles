@@ -11,7 +11,6 @@ sudo chown -R $(whoami):admin /opt/homebrew
 sudo chmod -R g+w /opt/homebrew
 
 # tap
-brew tap rcmdnk/homebrew-rcmdnkpac # screen
 brew tap isen-ng/dotnet-sdk-versions # dotnet
 
 ## tool
@@ -195,9 +194,8 @@ brew install python3
 brew install qemu
 brew install readline
 brew install redis
-#brew install --HEAD -f screen
 brew install rsync
-brew install screenutf8 --utf8
+brew install screen
 brew install sqlite
 brew install swift-format
 brew install telnet
