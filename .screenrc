@@ -25,9 +25,9 @@ hardstatus on
 # %?          - Start of a conditional statement.
 #  %F         - Use this part of the statement if the window has focus (i.e. it
 #               is the only window or the currently active one).
-#  %{= wB}    - bright brue on white.
+#  %{= 4;7}   - bright brue on white.
 # %:          - else
-#  %{=b wk}   - battribute is bold, bg is white and fg is blue
+#  %{=b 0:7}  - battribute is bold, bg is white and fg is blue
 # %?          - End conditional statement.
 #  %2n        - number of the current window with left 2 padding
 #  %f         - flags for current window
@@ -61,7 +61,7 @@ caption always '%?%F%{= 4;7}%:%{=b 0;7}%? %2n%f %07= %t %='
 # %{= .b}     - blue on default background.
 #  %l         - host load average.
 #hardstatus alwayslastline '%{= kw}%02c:%s %{= .y}%H %L=%{= .b}%-w%46>%{= .r}%n %t*%{= .b}%+w%-16=%{= .y}[%l]'
-hardstatus alwayslastline '%{= 7;0} %02c:%s %{= 3} %H %L=%{= 4}%-w%46>%{= 1} %n %t* %{= 4}%+w%-16=%{= 3} [%l] '
+hardstatus alwayslastline '%{= 7;0} %m/%d %02c:%s %{= 3} %H %L=%{= 4}%-w%46>%{= 1} %n %t* %{= 4}%+w%-16=%{= 3} [%l] '
 
 # その他のメッセージ
 sorendition "+rb .G"

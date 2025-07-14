@@ -27,5 +27,17 @@
   "deepl.translationMode": "Replace",
   "deepl.defaultSourceLanguage": "EN-US",
   "deepl.defaultTargetLanguage": "JA",
-  "dotnet.server.useOmnisharp": false
+  "dotnet.workingWithTestSignedSdk": true,
+  "dotnet.server.useOmnisharp": false,
+  "dotnetAcquisitionExtension.existingDotnetPath": [
+    {
+      "extensionId": "ms-dotnettools.csharp",
+      "path": "/opt/homebrew/bin/"
+    }
+  ],
+  "debug.onTaskErrors": "debugAnyway",
+  "files.watcherExclude": {
+    "**/.bloop": true,
+    "**/.metals": true
+  }
 }
