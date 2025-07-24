@@ -22,6 +22,11 @@ brew install --cask calibre
 (
   curl -L https://github.com/apprenticeharper/DeDRM_tools/releases/download/v7.2.1/DeDRM_tools_7.2.1.zip -o $HOME/Downloads
 )
+brew install --cask claude-code
+(
+  brew install ccuseage # claude code
+  claude config set -g autoUpdates false # use homebrew upgrade
+)
 brew install --cask clipy
 brew install --cask dropbox
 brew install --cask evernote
@@ -127,6 +132,7 @@ brew install gdb
 (
   echo "set startup-with-shell off"
 ) > ~/.gdbinit
+brew install gemini-cli
 brew install git
 brew install git-lfs
 #brew install gnu-sed # gnu sed
