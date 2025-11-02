@@ -142,7 +142,7 @@ brew install go
 brew install gpg pinentry-mac
 brew install gradle
 brew install graphviz
-brew install grep # gnu grep (requirement tfenv
+#brew install grep # gnu grep (requirement tfenv
 #brew install gzip # gnu gzip
 brew install helm
 brew install hugo
@@ -155,20 +155,19 @@ brew install jq
 brew install libxml2 libxslt libiconv
 brew install libimobiledevice
 brew install lua
-# brew install memcached                # move docker
-brew install mercurial
+#brew install mercurial
 brew install maven
 brew install minikube
 brew install mise
 (
   mise plugin add flutter
-  mise plugins ls-remote flutter
+  mise ls-remote flutter
   mise install flutter $(mise latest flutter)
   mise list flutter
   mise global flutter $(mise latest flutter)
   flutter doctor
   mise plugin add terraform
-  mise plugins ls-remote terraform
+  mise ls-remote terraform
   mise install terraform $(mise latest terraform)
   mise list terraform
   mise global terraform $(mise latest terraform)
