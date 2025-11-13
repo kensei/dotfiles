@@ -93,10 +93,10 @@ let g:ref_alc_encoding = 'UTF-8' " 文字化けするならここで文字コー
 " webdictサイトの設定
 let g:ref_source_webdict_sites = {
 \   'je': {
-\     'url': 'http://dictionary.infoseek.ne.jp/jeword/%s',
+\     'url': 'https://translate.google.co.jp/#ja/en/%s',
 \   },
 \   'ej': {
-\     'url': 'http://dictionary.infoseek.ne.jp/ejword/%s',
+\     'url': 'https://www.deepl.com/ja/translator#en/ja/%s',
 \   },
 \   'wiki': {
 \     'url': 'http://ja.wikipedia.org/wiki/%s',

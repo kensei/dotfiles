@@ -64,8 +64,6 @@ brew install --cask origami-studio
 brew install --cask jd-gui
 brew install --cask jad
 brew install --cask ilspy
-## previewer
-brew install --cask kindle
 # offece document
 brew install --cask libreoffice
 ## browser
@@ -106,6 +104,7 @@ mas install 417375580  # BetterSnapTool
 mas install 803453959  # slack
 mas install 1295203466 # Microsoft Remote Desktop
 mas install 784801555  # Microsoft OneNote
+mas install 302584613  # kindle
 
 # homebrew
 brew install ansible
