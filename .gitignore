@@ -18,6 +18,7 @@ Session.vim
 .zshrc.local
 samples
 
+.vim/autoload/plug.vim
 .vim/plugged/
 .vim/ref/
 .netrwhist
