@@ -74,6 +74,9 @@ call plug#begin('~/.vim/plugged')
 
   " flutter
   Plug 'thosakwe/vim-flutter'
+
+  " markdown preview
+  Plug 'skanehira/preview-markdown.vim'
 " }}}
 
 " ColorSchema{{{

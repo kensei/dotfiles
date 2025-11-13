@@ -134,6 +134,7 @@ brew install gdb
 brew install gemini-cli
 brew install git
 brew install git-lfs
+brew install glow # terminal markdown previwer
 #brew install gnu-sed # gnu sed
 #brew install gnu-tar # gnu tar
 #brew install gnutls # gnu tls utils
