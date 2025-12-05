@@ -35,7 +35,6 @@ brew install --cask keepassxc
 brew install --cask openvpn-connect
 brew install --cask timemachineeditor
 brew install --cask the-unarchiver
-#brew install --cask wkhtmltopdf           # markdown => pdf (repository archived)
 ## sdk
 brew install --cask android-studio
 brew install --cask devcontainers         # depend node
@@ -145,6 +144,7 @@ brew install graphviz
 #brew install grep # gnu grep (requirement tfenv
 #brew install gzip # gnu gzip
 brew install helm
+brew install html-to-markdown
 brew install hugo
 brew install hyperkit
 brew install ideviceinstaller
