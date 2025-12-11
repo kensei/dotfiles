@@ -157,6 +157,7 @@ brew install libimobiledevice
 brew install lua
 #brew install mercurial
 brew install maven
+brew install mdfried # terminal markdown previewer with image
 brew install minikube
 brew install mise
 (
