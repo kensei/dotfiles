@@ -205,6 +205,7 @@ brew install screen
 brew install sqlite
 brew install swift-format
 brew install telnet
+brew install tfsec                      # terraform security check
 brew install tree
 brew install --HEAD usbmuxd
 (
