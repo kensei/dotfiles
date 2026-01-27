@@ -35,5 +35,10 @@
     "**/.bloop": true,
     "**/.metals": true
   },
-  "omnisharp.useModernNet": false
+  "omnisharp.useModernNet": false,
+  "terminal.integrated.stickyScroll.enabled": false,
+  "terminal.integrated.suggest.enabled": false,
+  "terminal.integrated.shellIntegration.quickFixEnabled": false,
+  "dotnetAcquisitionExtension.existingDotnetPath": [],
+  "makefile.configureOnOpen": true
 }

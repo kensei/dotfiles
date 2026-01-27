@@ -33,6 +33,7 @@ brew install --cask evernote
 brew install --cask google-drive
 brew install --cask keepassxc
 brew install --cask openvpn-connect
+brew install --cask stats                 # menubar cpu/memory useage
 brew install --cask timemachineeditor
 brew install --cask the-unarchiver
 ## sdk
@@ -76,7 +77,7 @@ brew install --cask gimp
 brew install --cask inkscape
 brew install --cask skitch
 ## virtual environment
-#brew install --cask docker
+brew install --cask docker-desktop
 ## network
 brew install --cask wireshark
 brew install --cask filezilla
