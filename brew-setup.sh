@@ -39,10 +39,10 @@ brew install --cask the-unarchiver
 ## sdk
 brew install --cask android-studio
 brew install --cask devcontainers         # depend node
-brew install --cask dotnet-sdk5
+brew install --cask dotnet-sdk@8
 (
-  ln -s $HOMEBREW_PREFIX/bin/dotnetx64 $HOMEBREW_PREFIX/bin/dotnet
   dotnet --list-sdks
+  dotnet --list-runtimes
 )
 brew install --cask google-cloud-sdk
 brew install --cask android-ndk
