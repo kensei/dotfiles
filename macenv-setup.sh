@@ -117,6 +117,11 @@ defaults -currentHost write -g com.apple.keyboard.modifiermapping.${keyboard_id}
 </dict>
 "
 
+## mission control
+
+### Automatically rearrange Spaces based on most recent use => off
+defaults write com.apple.dock mru-spaces -bool false
+
 killall cfprefsd
 killall Finder
 killall Dock
