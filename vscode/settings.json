@@ -40,5 +40,7 @@
   "terminal.integrated.suggest.enabled": false,
   "terminal.integrated.shellIntegration.quickFixEnabled": false,
   "dotnetAcquisitionExtension.existingDotnetPath": [],
-  "makefile.configureOnOpen": true
+  "makefile.configureOnOpen": true,
+  "workbench.colorTheme": "Dark Modern",
+  "diffEditor.maxComputationTime": 0
 }

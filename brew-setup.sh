@@ -18,16 +18,13 @@ brew install --cask amazon-music
 brew install --cask appcleaner
 brew install --cask bartender
 brew install --cask caffeine
-brew install --cask calibre
-(
-  curl -L https://github.com/apprenticeharper/DeDRM_tools/releases/download/v7.2.1/DeDRM_tools_7.2.1.zip -o $HOME/Downloads
-)
 brew install --cask claude-code
 (
   brew install ccuseage # claude code
   claude config set -g autoUpdates false # use homebrew upgrade
 )
 brew install --cask clipy
+brew install --cask codex
 brew install --cask dropbox
 brew install --cask evernote
 brew install --cask google-drive
@@ -55,7 +52,6 @@ brew install --cask sublime-text
 brew install --cask marp                  # markdown presentation slide
 brew install --cask hex-fiend
 ## ide
-brew install --cask visual-studio
 brew install --cask visual-studio-code
 ## prototyping tool
 brew install --cask figma
@@ -75,7 +71,6 @@ brew install --cask blender
 brew install --cask drawio
 brew install --cask gimp
 brew install --cask inkscape
-brew install --cask skitch
 ## virtual environment
 brew install --cask docker-desktop
 ## network
@@ -122,11 +117,8 @@ brew install cocoapods
 brew install coreutils # gnu shell utils
 brew install c-kermit
 brew install direnv
-#brew install diffutils # gnu diff utils
 brew install dex2jar
 brew install ffmpeg
-#brew install findutils # gnu find utils
-#brew install gawk # gnu awk
 brew install gdb
 (
   echo "set startup-with-shell off"
@@ -135,28 +127,22 @@ brew install gemini-cli
 brew install git
 brew install git-lfs
 brew install glow # terminal markdown previwer
-#brew install gnu-sed # gnu sed
-#brew install gnu-tar # gnu tar
-#brew install gnutls # gnu tls utils
 brew install go
 brew install gpg pinentry-mac
 brew install gradle
 brew install graphviz
-#brew install grep # gnu grep (requirement tfenv
-#brew install gzip # gnu gzip
 brew install helm
 brew install html-to-markdown
 brew install hugo
 brew install hyperkit
 brew install ideviceinstaller
+brew install imagemagick
 brew install ios-deploy
-#brew install jenv
 brew install jmeter
 brew install jq
 brew install libxml2 libxslt libiconv
 brew install libimobiledevice
 brew install lua
-#brew install mercurial
 brew install maven
 brew install mdfried # terminal markdown previewer with image
 brew install minikube
@@ -174,25 +160,16 @@ brew install mise
   mise list terraform
   mise global terraform $(mise latest terraform)
 )
-#brew install mono                      # install with in visual studio
-# brew install mysql                    # move docker
 brew install mysql-client
 brew install netcat
-# brew install nginx                    # move docker
 brew install nkf
 brew install nmap
-#brew install nodebrew
-#(
-#    nodebrew setup
-#)
 brew install oath-toolkit
 brew install openssl
 brew link --force openssl
 brew install pandoc
-#brew install pipenv
 brew install plantuml
 brew install poppler                    # pdf tools
-#brew install pyenv
 brew install python
 brew install python3
 (
@@ -247,8 +224,6 @@ cat << EOS > ~/Library/LaunchAgents/com.docker.machine.default.plist
 </plist>
 EOS
 
-echo "setup justmind && pencil && ps remote"
 echo "run \$ANDROID_HOME/extras/intel/Hardware_Accelerated_Execution_Manager/IntelHAXM_{ver}.dmg"
-echo "make xamarin apndroid player and setup google play(http://opengapps.org/)"
 
 brew doctor
