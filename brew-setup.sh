@@ -145,6 +145,7 @@ brew install libimobiledevice
 brew install lua
 brew install maven
 brew install mdfried # terminal markdown previewer with image
+brew install mermaid-cli
 brew install minikube
 brew install mise
 (
