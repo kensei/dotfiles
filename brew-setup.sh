@@ -116,23 +116,21 @@ brew install cocoapods
 )
 brew install coreutils # gnu shell utils
 brew install c-kermit
-brew install direnv
+brew install defuddle # html content to markdown
 brew install dex2jar
+brew install direnv
 brew install ffmpeg
 brew install gdb
 (
   echo "set startup-with-shell off"
 ) > ~/.gdbinit
-brew install gemini-cli
 brew install git
 brew install git-lfs
-brew install glow # terminal markdown previwer
 brew install go
 brew install gpg pinentry-mac
 brew install gradle
 brew install graphviz
 brew install helm
-brew install html-to-markdown
 brew install hugo
 brew install hyperkit
 brew install ideviceinstaller
@@ -140,6 +138,7 @@ brew install imagemagick
 brew install ios-deploy
 brew install jmeter
 brew install jq
+brew install leaf-md # terminal markdown previewer with vim
 brew install libxml2 libxslt libiconv
 brew install libimobiledevice
 brew install lua
@@ -183,8 +182,10 @@ brew install rsync
 brew install screen
 brew install sqlite
 brew install swift-format
+brew install tdf                        # terminal pdf viewer
 brew install telnet
-brew install tfsec                      # terraform security check
+brew install tfsec                      # terraform security eheck
+brew install tirith                     # terminal input validator
 brew install tree
 brew install --HEAD usbmuxd
 (

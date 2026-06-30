@@ -159,3 +159,9 @@ nnoremap <C-]> g<C-]>zz
 " Ctrl + Spaceを強制上書き
 autocmd VimEnter * imap <Nul> <C-Space>
 imap <C-Space> <C-x><C-o>
+
+"----------------------------------------
+" preview markdown
+"----------------------------------------
+" Preview the current Markdown file in a vertical split using leaf
+nnoremap <Leader>md :vertical botright terminal leaf -w %<CR>
