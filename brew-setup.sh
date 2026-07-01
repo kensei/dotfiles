@@ -14,7 +14,6 @@ sudo chmod -R g+w /opt/homebrew
 brew tap isen-ng/dotnet-sdk-versions # dotnet
 
 ## tool
-brew install --cask amazon-music
 brew install --cask appcleaner
 brew install --cask bartender
 brew install --cask caffeine
@@ -36,7 +35,7 @@ brew install --cask the-unarchiver
 ## sdk
 brew install --cask android-studio
 brew install --cask devcontainers         # depend node
-brew install --cask dotnet-sdk@8
+brew install --cask dotnet-sdk@10
 (
   dotnet --list-sdks
   dotnet --list-runtimes
@@ -100,6 +99,7 @@ mas install 803453959  # slack
 mas install 1295203466 # Microsoft Remote Desktop
 mas install 784801555  # Microsoft OneNote
 mas install 302584613  # kindle
+mas install 899247664  # TestFlight
 
 # homebrew
 brew install ansible
