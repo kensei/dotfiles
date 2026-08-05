@@ -14,6 +14,7 @@ sudo chmod -R g+w /opt/homebrew
 brew tap isen-ng/dotnet-sdk-versions # dotnet
 
 ## tool
+brew install --cask android-cli
 brew install --cask appcleaner
 brew install --cask bartender
 brew install --cask caffeine
@@ -41,7 +42,6 @@ brew install --cask dotnet-sdk@10
   dotnet --list-runtimes
 )
 brew install --cask google-cloud-sdk
-brew install --cask android-ndk
 brew install --cask unity-hub
 ## terminal
 brew install --cask iterm2
@@ -180,6 +180,7 @@ brew install readline
 brew install redis
 brew install rsync
 brew install screen
+brew install tmux
 brew install sqlite
 brew install swift-format
 brew install tdf                        # terminal pdf viewer
@@ -225,7 +226,5 @@ cat << EOS > ~/Library/LaunchAgents/com.docker.machine.default.plist
     </dict>
 </plist>
 EOS
-
-echo "run \$ANDROID_HOME/extras/intel/Hardware_Accelerated_Execution_Manager/IntelHAXM_{ver}.dmg"
 
 brew doctor

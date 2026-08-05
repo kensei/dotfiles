@@ -42,5 +42,6 @@
   "dotnetAcquisitionExtension.existingDotnetPath": [],
   "makefile.configureOnOpen": true,
   "workbench.colorTheme": "Dark Modern",
-  "diffEditor.maxComputationTime": 0
+  "diffEditor.maxComputationTime": 0,
+  "editor.fontSize": 13
 }

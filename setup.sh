@@ -1,5 +1,5 @@
 #!/bin/bash
-DOT_FILES=( .bashrc .gitconfig .gitignore .inputrc .screenrc .vimrc .ctags .tigrc)
+DOT_FILES=( .bashrc .gitconfig .gitignore .inputrc .screenrc .tmux.conf .vimrc .ctags .tigrc .zshrc .zprofile)
 
 for file in ${DOT_FILES[@]}
 do
