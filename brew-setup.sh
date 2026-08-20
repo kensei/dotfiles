@@ -15,6 +15,9 @@ brew tap isen-ng/dotnet-sdk-versions # dotnet
 
 ## tool
 brew install --cask android-cli
+(
+  android
+)
 brew install --cask appcleaner
 brew install --cask bartender
 brew install --cask caffeine
@@ -42,6 +45,10 @@ brew install --cask dotnet-sdk@10
   dotnet --list-runtimes
 )
 brew install --cask google-cloud-sdk
+brew install --cask unity-cli
+(
+  unity
+)
 brew install --cask unity-hub
 ## terminal
 brew install --cask iterm2
