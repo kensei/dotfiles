@@ -28,6 +28,16 @@ brew install --cask claude-code
 )
 brew install --cask clipy
 brew install --cask codex
+(
+  codex plugin marketplace add aws/agent-toolkit-for-aws
+  codex plugin add aws-core@agent-toolkit-for-aws
+  codex plugin marketplace add awslabs/startups
+  codex plugin marketplace add anthropics/claude-plugins-official
+  codex plugin add aws-startup-advisor@claude-plugins-official
+  codex plugin marketplace add Unity-Technologies/unity-agent-plugin
+  codex plugin add unity@unity-agent-plugin
+  codex plugin list
+)
 brew install --cask dropbox
 brew install --cask evernote
 brew install --cask google-drive

@@ -1,4 +1,5 @@
 {
+  "terminal.integrated.enableImages": true,
   "scm.diffDecorations": "none", // git diff editor decoration
   "json.maxItemsComputed": 8000,
   "terminal.integrated.scrollback": 10000,
