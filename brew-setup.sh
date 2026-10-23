@@ -35,6 +35,7 @@ brew install --cask codex
   codex plugin add aws-startup-advisor@claude-plugins-official
   codex plugin marketplace add Unity-Technologies/unity-agent-plugin
   codex plugin add unity@unity-agent-plugin
+  codex plugin add codex-security@openai-curated-remote
   codex plugin list
 )
 brew install --cask dropbox
