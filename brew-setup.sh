@@ -13,6 +13,10 @@ sudo chmod -R g+w /opt/homebrew
 # tap
 brew tap isen-ng/dotnet-sdk-versions # dotnet
 
+## browser
+brew install --cask firefox
+brew install --cask google-chrome
+brew install --cask tor-browser
 ## tool
 brew install --cask android-cli
 (
@@ -49,7 +53,7 @@ brew install --cask the-unarchiver
 ## sdk
 brew install --cask android-studio
 brew install --cask devcontainers         # depend node
-brew install --cask dotnet-sdk@10
+brew install --cask dotnet-sdk
 (
   dotnet --list-sdks
   dotnet --list-runtimes
@@ -57,7 +61,9 @@ brew install --cask dotnet-sdk@10
 brew install --cask google-cloud-sdk
 brew install --cask unity-cli
 (
-  unity
+  unity auth login
+  unity pipeline install
+  unity pipeline list-versions
 )
 brew install --cask unity-hub
 ## terminal
@@ -78,10 +84,6 @@ brew install --cask jad
 brew install --cask ilspy
 # offece document
 brew install --cask libreoffice
-## browser
-brew install --cask firefox
-brew install --cask google-chrome
-brew install --cask tor-browser
 ## graphic
 brew install --cask blender
 brew install --cask drawio
