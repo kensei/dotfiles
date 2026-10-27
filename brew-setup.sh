@@ -146,6 +146,7 @@ brew install gdb
 brew install git
 brew install git-lfs
 brew install go
+brew install googleworkspace-cli
 brew install gpg pinentry-mac
 brew install gradle
 brew install graphviz
